@@ -27,13 +27,13 @@ material = SubResource("StandardMaterial3D_f2txt")
 [node name="Level" type="Node3D" unique_id=1823335500]
 
 [node name="Player" parent="." unique_id=534327215 instance=ExtResource("1_u52ul")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.023759, 0.8542713, -0.76218605)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.023759, 0.36916375, -75.29888)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=420973390]
 environment = SubResource("Environment_vonw3")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1859049068]
-transform = Transform3D(0.9135454, 0.30696803, -0.2668432, 0, 0.6560589, 0.75470954, 0.40673667, -0.68946147, 0.5993396, 0, 9.50968, 0)
+transform = Transform3D(0.9135454, 0.30696803, -0.26684326, 0, 0.656059, 0.75470954, 0.40673664, -0.68946147, 0.5993397, 0, 9.50968, 0)
 
 [node name="Obstacle2" type="CSGBox3D" parent="." unique_id=1645554223]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.445857, 0.33367467, -67.159935)
