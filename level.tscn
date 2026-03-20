@@ -26,8 +26,13 @@ material = SubResource("StandardMaterial3D_f2txt")
 
 [node name="Level" type="Node3D" unique_id=1823335500]
 
+<<<<<<< Updated upstream
 [node name="Player" parent="." unique_id=534327215 instance=ExtResource("1_u52ul")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.023759, 0.8542713, -0.76218605)
+=======
+[node name="Borsuk" parent="." unique_id=534327215 instance=ExtResource("1_u52ul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.023759, 0.91549563, -0.76218605)
+>>>>>>> Stashed changes
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=420973390]
 environment = SubResource("Environment_vonw3")
@@ -41,12 +46,6 @@ use_collision = true
 
 [node name="hanger" parent="." unique_id=849735318 instance=ExtResource("2_vonw3")]
 transform = Transform3D(0.405, 0, 0, 0, 0.405, 0, 0, 0, 0.405, -19.745031, 2.3927946, -90.207146)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=374903642]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1218371388]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=85433990]
 
 [node name="StaticBody3D2" type="StaticBody3D" parent="." unique_id=287412856]
 
