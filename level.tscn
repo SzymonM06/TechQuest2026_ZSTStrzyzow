@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cb50jw01vo3w" path="res://assets/christmas_tree.glb" id="4_n6hdu"]
 [ext_resource type="PackedScene" uid="uid://d35ahncylxcf4" path="res://assets/two_tree.glb" id="5_km5ld"]
 [ext_resource type="PackedScene" uid="uid://brgk82ntjfnpt" path="res://assets/small_tree.glb" id="7_i2t4f"]
+[ext_resource type="PackedScene" uid="uid://bspvd7nph08lg" path="res://assets/mountain.glb" id="8_km5ld"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8cye3"]
 sky_horizon_color = Color(0.3882353, 0.6627451, 0.91764706, 1)
@@ -20,7 +21,7 @@ sky = SubResource("Sky_2orkt")
 ambient_light_color = Color(0.28214076, 0.5424279, 0.92932516, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f2txt"]
-albedo_color = Color(0.5018574, 0.709876, 0.41663358, 1)
+albedo_color = Color(0.5989445, 0.68997216, 0.36344913, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_vonw3"]
 material = SubResource("StandardMaterial3D_f2txt")
@@ -210,3 +211,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.832764, -0.17359889, -116.
 
 [node name="small_tree11" parent="." unique_id=526425429 instance=ExtResource("7_i2t4f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.443947, -0.17359889, -114.752846)
+
+[node name="mountain" parent="." unique_id=1231496093 instance=ExtResource("8_km5ld")]
+transform = Transform3D(-0.004921204, -0.016300652, 0.999855, -8.022949e-05, 0.99986714, 0.016300455, -0.99998784, 0, -0.0049218577, 31.870794, -0.2884159, -205.74748)
