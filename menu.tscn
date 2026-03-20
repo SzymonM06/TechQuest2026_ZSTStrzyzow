@@ -785,9 +785,53 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ll077")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ytr4m"]
+[sub_resource type="Gradient" id="Gradient_oxnod"]
+offsets = PackedFloat32Array(0, 0.0029761905, 0.13392857, 1)
+colors = PackedColorArray(0.30681688, 0.3271063, 0.27146927, 1, 0.30588073, 0.26085877, 0.26118103, 1, 0.44097933, 0.33862647, 0.31589395, 1, 0.46929657, 0.46929651, 0.46929651, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l48gv"]
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_gd0jp"]
+gradient = SubResource("Gradient_oxnod")
+fill_from = Vector2(0.5907258, 1)
+fill_to = Vector2(0.5423387, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4ndjb"]
+texture = SubResource("GradientTexture2D_gd0jp")
+
+[sub_resource type="Gradient" id="Gradient_jspdm"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0.08035714, 0.5029762, 1)
+colors = PackedColorArray(0.54794466, 0.07983465, 0.15675321, 1, 0.692146, 0.5595663, 0.20181957, 1, 0.60778224, 0.3397498, 0.08229361, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_oxnod"]
+gradient = SubResource("Gradient_jspdm")
+fill_from = Vector2(0, 1)
+fill_to = Vector2(0.55040324, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gd0jp"]
+texture = SubResource("GradientTexture2D_oxnod")
+
+[sub_resource type="Gradient" id="Gradient_gd0jp"]
+offsets = PackedFloat32Array(0, 0.47916666, 1)
+colors = PackedColorArray(0.7685154, 0.034420323, 0.15346688, 1, 0.8896514, 0.68065983, 3.080368e-06, 1, 0.88812304, 0.5808556, 1.92523e-06, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_4ndjb"]
+gradient = SubResource("Gradient_gd0jp")
+fill_from = Vector2(0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3ls4m"]
+texture = SubResource("GradientTexture2D_4ndjb")
+
+[sub_resource type="Gradient" id="Gradient_4ndjb"]
+offsets = PackedFloat32Array(0, 0.04464286, 1)
+colors = PackedColorArray(0.15494698, 0.16178942, 0.26069006, 1, 0.39020315, 0.3938891, 0.4471659, 1, 0.66492164, 0.66492164, 0.6649216, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3ls4m"]
+gradient = SubResource("Gradient_4ndjb")
+fill_from = Vector2(0.49395162, 0)
+fill_to = Vector2(0.5060484, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5h80m"]
+texture = SubResource("GradientTexture2D_3ls4m")
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ytr4m"]
 
@@ -3328,7 +3372,7 @@ mesh = SubResource("ArrayMesh_ahxau")
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1693314723]
 offset_right = 1153.0
 offset_bottom = 60.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_ytr4m")
+theme_override_styles/panel = SubResource("StyleBoxTexture_4ndjb")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer" unique_id=1384138965]
 layout_mode = 2
@@ -3336,14 +3380,19 @@ alignment = 1
 
 [node name="Button" type="Button" parent="PanelContainer/HBoxContainer" unique_id=1171522686]
 layout_mode = 2
-text = "To Battle!"
+size_flags_stretch_ratio = 20.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxTexture_gd0jp")
+theme_override_styles/hover = SubResource("StyleBoxTexture_3ls4m")
+text = " - START! - "
 
 [node name="PanelContainer2" type="PanelContainer" parent="." unique_id=1734921812]
 offset_left = -5.0
 offset_top = 530.0
 offset_right = 1155.0
 offset_bottom = 649.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_l48gv")
+theme_override_styles/panel = SubResource("StyleBoxTexture_5h80m")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer2" unique_id=2083897364]
 material = SubResource("CanvasItemMaterial_ytr4m")
@@ -3362,7 +3411,7 @@ scale = Vector2(2.078252, 2.005618)
 texture = ExtResource("4_l48gv")
 
 [node name="Sprite2D3" type="Sprite2D" parent="PanelContainer2/HBoxContainer" unique_id=2126666439]
-position = Vector2(1077, 56.999985)
+position = Vector2(1077, 60)
 scale = Vector2(0.225, 0.225)
 texture = ExtResource("5_ytr4m")
 
