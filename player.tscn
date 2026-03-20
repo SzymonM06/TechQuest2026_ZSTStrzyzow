@@ -1010,7 +1010,7 @@ size = Vector3(1, 0.8592529, 1)
 mass = 2800.0
 physics_material_override = SubResource("PhysicsMaterial_onrkg")
 script = ExtResource("1_onrkg")
-max_torque = 2500.0
+max_torque = 28000.0
 
 [node name="Cube_001" type="MeshInstance3D" parent="." unique_id=523513616]
 transform = Transform3D(-0.42000002, -2.566929e-08, 4.5459846e-08, -6.341824e-08, 0.17000003, 2.220446e-16, 3.6717566e-08, 2.1714892e-15, 0.52000004, 0.013753302, 0.29809964, -0.21234126)
@@ -1089,7 +1089,7 @@ current = true
 [node name="VehicleWheel3D2" type="VehicleWheel3D" parent="." unique_id=2063649355]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5493959, -0.44366276, 0.94359773)
 wheel_radius = 0.2
-wheel_friction_slip = 3.0
+wheel_friction_slip = 0.5
 suspension_travel = 0.15
 suspension_stiffness = 20.0
 
@@ -1100,7 +1100,7 @@ mesh = SubResource("ArrayMesh_sdn53")
 [node name="VehicleWheel3D" type="VehicleWheel3D" parent="." unique_id=1121218235]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5493959, -0.44366276, 0.64458877)
 wheel_radius = 0.2
-wheel_friction_slip = 3.0
+wheel_friction_slip = 0.5
 suspension_travel = 0.15
 suspension_stiffness = 20.0
 
@@ -1111,7 +1111,7 @@ mesh = SubResource("ArrayMesh_bahmj")
 [node name="VehicleWheel3D3" type="VehicleWheel3D" parent="." unique_id=936429455]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5493959, -0.44366276, 0.3236793)
 wheel_radius = 0.2
-wheel_friction_slip = 3.0
+wheel_friction_slip = 0.5
 suspension_travel = 0.15
 suspension_stiffness = 20.0
 
@@ -1122,7 +1122,7 @@ mesh = SubResource("ArrayMesh_k7nco")
 [node name="VehicleWheel3D4" type="VehicleWheel3D" parent="." unique_id=2035518752]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5493959, -0.44366276, 0.011109322)
 wheel_radius = 0.2
-wheel_friction_slip = 3.0
+wheel_friction_slip = 0.5
 suspension_travel = 0.15
 suspension_stiffness = 20.0
 
@@ -1133,7 +1133,7 @@ mesh = SubResource("ArrayMesh_b5sui")
 [node name="VehicleWheel3D5" type="VehicleWheel3D" parent="." unique_id=1384940827]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5493959, -0.44366276, -0.31496236)
 wheel_radius = 0.2
-wheel_friction_slip = 3.0
+wheel_friction_slip = 0.5
 suspension_travel = 0.15
 suspension_stiffness = 20.0
 
@@ -1144,7 +1144,7 @@ mesh = SubResource("ArrayMesh_nwusl")
 [node name="VehicleWheel3D6" type="VehicleWheel3D" parent="." unique_id=637217173]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5493959, -0.44366276, -0.60992026)
 wheel_radius = 0.2
-wheel_friction_slip = 3.0
+wheel_friction_slip = 0.5
 suspension_travel = 0.15
 suspension_stiffness = 20.0
 
@@ -1155,7 +1155,7 @@ mesh = SubResource("ArrayMesh_u86nv")
 [node name="VehicleWheel3D7" type="VehicleWheel3D" parent="." unique_id=1146960459]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4137663, -0.44366276, -0.66578907)
 wheel_radius = 0.2
-wheel_friction_slip = 3.0
+wheel_friction_slip = 0.5
 suspension_travel = 0.15
 suspension_stiffness = 20.0
 
@@ -1166,7 +1166,7 @@ mesh = SubResource("ArrayMesh_xnc0v")
 [node name="VehicleWheel3D8" type="VehicleWheel3D" parent="." unique_id=220531291]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4137663, -0.44366276, -0.3675516)
 wheel_radius = 0.2
-wheel_friction_slip = 3.0
+wheel_friction_slip = 0.5
 suspension_travel = 0.15
 suspension_stiffness = 20.0
 
@@ -1177,7 +1177,7 @@ mesh = SubResource("ArrayMesh_3p7pw")
 [node name="VehicleWheel3D9" type="VehicleWheel3D" parent="." unique_id=2104498372]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4137663, -0.44366276, -0.04531452)
 wheel_radius = 0.2
-wheel_friction_slip = 3.0
+wheel_friction_slip = 0.5
 suspension_travel = 0.15
 suspension_stiffness = 20.0
 
@@ -1188,7 +1188,7 @@ mesh = SubResource("ArrayMesh_i5nc7")
 [node name="VehicleWheel3D10" type="VehicleWheel3D" parent="." unique_id=510473648]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4137663, -0.44366276, 0.2667335)
 wheel_radius = 0.2
-wheel_friction_slip = 3.0
+wheel_friction_slip = 0.5
 suspension_travel = 0.15
 suspension_stiffness = 20.0
 
@@ -1199,7 +1199,7 @@ mesh = SubResource("ArrayMesh_1ygll")
 [node name="VehicleWheel3D11" type="VehicleWheel3D" parent="." unique_id=1009202834]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4137663, -0.44366276, 0.58218026)
 wheel_radius = 0.2
-wheel_friction_slip = 3.0
+wheel_friction_slip = 0.5
 suspension_travel = 0.15
 suspension_stiffness = 20.0
 
@@ -1210,7 +1210,7 @@ mesh = SubResource("ArrayMesh_7bufs")
 [node name="VehicleWheel3D12" type="VehicleWheel3D" parent="." unique_id=1389077662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4137663, -0.44366276, 0.8840383)
 wheel_radius = 0.2
-wheel_friction_slip = 3.0
+wheel_friction_slip = 0.5
 suspension_travel = 0.15
 suspension_stiffness = 20.0
 
