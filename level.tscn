@@ -13,7 +13,8 @@ fog_enabled = true
 [node name="Level" type="Node3D" unique_id=1823335500]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=898755860]
-size = Vector3(20, 0.055, 20)
+use_collision = true
+size = Vector3(50, 0.055, 50)
 
 [node name="Player" parent="." unique_id=534327215 instance=ExtResource("1_u52ul")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.023759, 0.57355666, -0.76218605)

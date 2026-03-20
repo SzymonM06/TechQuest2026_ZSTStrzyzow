@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://doucyc7yewk46"]
 
 [ext_resource type="Script" uid="uid://ppw5ro6uq02j" path="res://spring_arm_3d.gd" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://dy0sd7tidom32" path="res://player.gd" id="1_onrkg"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_onrkg"]
+rough = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4flbx"]
 vertex_color_use_as_albedo = true
@@ -9,7 +13,13 @@ albedo_color = Color(0.3277308, 0.47968155, 0.15040213, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_sh265"]
 material = SubResource("StandardMaterial3D_4flbx")
 
-[node name="Player" type="Node3D" unique_id=534327215]
+[sub_resource type="BoxShape3D" id="BoxShape3D_4flbx"]
+size = Vector3(1, 0.9, 2.1)
+
+[node name="Player" type="VehicleBody3D" unique_id=18152314]
+mass = 28000.0
+physics_material_override = SubResource("PhysicsMaterial_onrkg")
+script = ExtResource("1_onrkg")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=529192826]
 transform = Transform3D(1, 0, 0, 0, 0.92, 0, 0, 0, 2.195, 0, 0, 0)
@@ -26,3 +36,48 @@ script = ExtResource("1_4flbx")
 
 [node name="Camera3D" type="Camera3D" parent="SpringArm3D" unique_id=1494288965]
 transform = Transform3D(-1, 0, 8.742278e-08, 4.371139e-08, 0.8660254, 0.5, -7.5710346e-08, 0.5, -0.8660254, 0, 0, 0)
+current = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=817413286]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0014648438)
+shape = SubResource("BoxShape3D_4flbx")
+
+[node name="VehicleWheel3D" type="VehicleWheel3D" parent="." unique_id=937428144]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55, -0.357, 0.86)
+wheel_radius = 0.195
+
+[node name="VehicleWheel3D2" type="VehicleWheel3D" parent="." unique_id=1452761539]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55, -0.357, 0.43)
+wheel_radius = 0.195
+
+[node name="VehicleWheel3D3" type="VehicleWheel3D" parent="." unique_id=571460699]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55, -0.357, 0)
+wheel_radius = 0.195
+
+[node name="VehicleWheel3D4" type="VehicleWheel3D" parent="." unique_id=1838912157]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55, -0.357, -0.43)
+wheel_radius = 0.195
+
+[node name="VehicleWheel3D5" type="VehicleWheel3D" parent="." unique_id=1815864003]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55, -0.357, -0.86)
+wheel_radius = 0.195
+
+[node name="VehicleWheel3D6" type="VehicleWheel3D" parent="." unique_id=2132079545]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.551, -0.357, 0.86)
+wheel_radius = 0.195
+
+[node name="VehicleWheel3D7" type="VehicleWheel3D" parent="." unique_id=1506995713]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.551, -0.357, 0.43)
+wheel_radius = 0.195
+
+[node name="VehicleWheel3D8" type="VehicleWheel3D" parent="." unique_id=2027719425]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5507979, -0.357, 0)
+wheel_radius = 0.195
+
+[node name="VehicleWheel3D9" type="VehicleWheel3D" parent="." unique_id=188537106]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.551, -0.357, -0.43)
+wheel_radius = 0.195
+
+[node name="VehicleWheel3D10" type="VehicleWheel3D" parent="." unique_id=1114193598]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.551, -0.357, -0.86)
+wheel_radius = 0.195
