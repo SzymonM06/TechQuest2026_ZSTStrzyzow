@@ -14,7 +14,7 @@ fog_enabled = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=898755860]
 use_collision = true
-size = Vector3(50, 0.055, 50)
+size = Vector3(100, 0.055, 100)
 
 [node name="Player" parent="." unique_id=534327215 instance=ExtResource("1_u52ul")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.023759, 0.57355666, -0.76218605)
@@ -24,3 +24,32 @@ environment = SubResource("Environment_vonw3")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1859049068]
 transform = Transform3D(0.9135454, 0.30696803, -0.26684326, 0, 0.656059, 0.75470954, 0.40673664, -0.68946147, 0.5993397, 0, 9.50968, 0)
+
+[node name="Obstacle" type="CSGBox3D" parent="." unique_id=2009695222]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49342155, 0)
+use_collision = true
+
+[node name="Obstacle2" type="CSGBox3D" parent="." unique_id=1645554223]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.445857, 0.49342155, 0)
+use_collision = true
+
+[node name="Obstacle3" type="CSGBox3D" parent="." unique_id=2101736126]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49342155, 8.999193)
+use_collision = true
+
+[node name="Obstacle4" type="CSGBox3D" parent="." unique_id=250095397]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.445857, 0.49342155, 8.999193)
+use_collision = true
+
+[node name="Obstacle5" type="CSGBox3D" parent="." unique_id=1308902680]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49342155, -7.885166)
+use_collision = true
+
+[node name="Obstacle6" type="CSGBox3D" parent="." unique_id=2050212925]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.727528, 2.2039356, -7.885166)
+use_collision = true
+size = Vector3(5, 5, 1)
+
+[node name="Obstacle7" type="CSGBox3D" parent="." unique_id=1275760546]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.445857, 0.49342155, -7.885166)
+use_collision = true
