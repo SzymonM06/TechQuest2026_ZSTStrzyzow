@@ -10,15 +10,13 @@
 script = ExtResource("1_bjxg3")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1083150239]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("CapsuleMesh_35rin")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2095296184]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_bjxg3")
 
 [node name="Head" type="Node3D" parent="." unique_id=742036261]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.36026675, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5805375, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=1172917375]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
