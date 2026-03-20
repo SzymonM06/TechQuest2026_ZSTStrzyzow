@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://d0vxodfdnokg1"]
+
+[ext_resource type="Script" uid="uid://cuuw374agj0od" path="res://vehicleselect.gd" id="1_n444f"]
+
+[sub_resource type="Gradient" id="Gradient_di12n"]
+offsets = PackedFloat32Array(0, 0.5327381, 1)
+colors = PackedColorArray(0.023415875, 0.113687076, 0.06879465, 1, 0.025922524, 0.102745734, 0.08380785, 1, 0.076751016, 0.19009632, 0.16919214, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_n444f"]
+gradient = SubResource("Gradient_di12n")
+fill_from = Vector2(0, 1)
+metadata/_snap_enabled = true
+metadata/_snap_count = 2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_krs7t"]
+texture = SubResource("GradientTexture2D_n444f")
+
+[sub_resource type="Gradient" id="Gradient_n444f"]
+colors = PackedColorArray(0.06559251, 0.16714141, 0.11956792, 1, 0.22372699, 0.32188216, 0.314132, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_krs7t"]
+gradient = SubResource("Gradient_n444f")
+fill_from = Vector2(0.6189516, 0.038306452)
+fill_to = Vector2(0.61491936, 0.9979839)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jc7ht"]
+texture = SubResource("GradientTexture2D_krs7t")
+
+[node name="vehicleselect" type="Node2D" unique_id=1092752738]
+script = ExtResource("1_n444f")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1248628357]
+offset_right = 1153.0
+offset_bottom = 649.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_krs7t")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=328520700]
+offset_left = 14.0
+offset_top = 13.0
+offset_right = 214.0
+offset_bottom = 299.0
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1630073827]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_jc7ht")
+text = "BWP Borsuk"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1075484798]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_jc7ht")
+text = "Samobieżna haubica Krab"
+
+[node name="Label2" type="Label" parent="." unique_id=1558994118]
+offset_left = 424.0
+offset_top = 35.0
+offset_right = 1107.0
+offset_bottom = 96.0
+theme_override_font_sizes/font_size = 42
+text = "TEST"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=1466443388]
+offset_left = 791.0
+offset_top = 152.0
+offset_right = 1124.0
+offset_bottom = 619.0
+theme_override_font_sizes/font_size = 12
+text = "testtesttesttest
+testtesttest
+testtesttest
+testtesttest"
+horizontal_alignment = 2
+autowrap_mode = 3
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
