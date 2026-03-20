@@ -18,13 +18,13 @@ use_collision = true
 size = Vector3(100, 0.055, 100)
 
 [node name="Player" parent="." unique_id=534327215 instance=ExtResource("1_u52ul")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.023759, 0.57355666, -0.76218605)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.023759, 0.8542713, -0.76218605)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=420973390]
 environment = SubResource("Environment_vonw3")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1859049068]
-transform = Transform3D(0.9135454, 0.30696803, -0.26684326, 0, 0.656059, 0.75470954, 0.40673664, -0.68946147, 0.5993397, 0, 9.50968, 0)
+transform = Transform3D(0.9135454, 0.30696803, -0.2668432, 0, 0.6560589, 0.75470954, 0.40673667, -0.68946147, 0.5993396, 0, 9.50968, 0)
 
 [node name="Obstacle" type="CSGBox3D" parent="." unique_id=2009695222]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49342155, 0)
