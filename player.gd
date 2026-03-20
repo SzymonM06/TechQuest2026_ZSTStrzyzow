@@ -1,6 +1,6 @@
 extends VehicleBody3D
 
-const ENGINE_POWER = 71960.0
+const ENGINE_POWER = 8096.0
 @onready var left_wheels = [$VehicleWheel3D,$VehicleWheel3D2,
 $VehicleWheel3D3,$VehicleWheel3D4,$VehicleWheel3D5, 
 $VehicleWheel3D11,$VehicleWheel3D12]
@@ -19,9 +19,9 @@ func _process(delta: float) -> void:
 	var engine_power = 20.0
 	if steer != 0 and move_dir != 0:
 		for wheel in left_wheels:
-			wheel.engine_force = ENGINE_POWER * (move_dir-steer) * 2
+			wheel.engine_force = ENGINE_POWER * (move_dir-steer*1.6) * 2
 		for wheel in right_wheels:
-			wheel.engine_force = ENGINE_POWER * (move_dir+steer) * 2
+			wheel.engine_force = ENGINE_POWER * (move_dir+steer*1.6) * 2
 	elif steer != 0:
 		for wheel in left_wheels:
 			wheel.engine_force = ENGINE_POWER * -steer * 2
