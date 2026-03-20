@@ -28,6 +28,9 @@ material = SubResource("StandardMaterial3D_f2txt")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_oi3di"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_km5ld"]
+size = Vector3(1.2538757, 0.23321533, 0.052139282)
+
 [node name="Level" type="Node3D" unique_id=1823335500]
 
 [node name="Borsuk" parent="." unique_id=534327215 instance=ExtResource("1_u52ul")]
@@ -457,3 +460,11 @@ transform = Transform3D(-0.004133829, -0.013692549, 0.8398782, -6.739277e-05, 0.
 
 [node name="mountain6" parent="." unique_id=1400677226 instance=ExtResource("8_km5ld")]
 transform = Transform3D(-0.004133829, -0.013692549, 0.8398782, -6.739277e-05, 0.8398884, 0.013692383, -0.8399898, 2.933666e-10, -0.0041343784, -82.74528, -0.2884159, -191.44286)
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="." unique_id=88273371]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16.451385, -141.47092)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3" unique_id=2107606599]
+transform = Transform3D(300, 0, 0, 0, 300, 0, 0, 0, 300, -3.8223267, 15.137558, 25.301025)
+shape = SubResource("BoxShape3D_km5ld")
+debug_color = Color(0.7291115, 0.4243112, 0.5676542, 0.41960785)
