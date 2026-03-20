@@ -1,8 +1,8 @@
-[gd_scene format=4 uid="uid://dsf4v2pwe14fw"]
+[gd_scene format=4 uid="uid://dcw6vuvgdkppw"]
 
-[ext_resource type="Script" uid="uid://btuuqu5h2jnt" path="res://menu.gd" id="1_jspdm"]
+[ext_resource type="Script" path="res://menu.gd" id="1_jspdm"]
 [ext_resource type="Texture2D" uid="uid://cw8kmjgd4cod4" path="res://assets/hanger_Concrete_Aggregate_Smoke.jpg" id="2_g7jxm"]
-[ext_resource type="Script" uid="uid://cmy5g5ajeav6d" path="res://camera_rotate.gd" id="2_ouk20"]
+[ext_resource type="Script" path="res://camera_rotate.gd" id="2_ouk20"]
 [ext_resource type="Texture2D" uid="uid://nbocarpgmdgc" path="res://assets/hanger_Concrete_Stamped_Ashlar.jpg" id="3_jspdm"]
 [ext_resource type="Texture2D" uid="uid://b4vrvu8imda7d" path="res://ZST-logo-Nadruk-448x212.png" id="3_ytr4m"]
 [ext_resource type="Texture2D" uid="uid://lctxyyk5rewb" path="res://66a88f85aacd7-500x333.png" id="4_l48gv"]
