@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://dsf4v2pwe14fw"]
+
+[ext_resource type="PackedScene" uid="uid://dpy71wg55r0hx" path="res://assets/hanger.glb" id="2_mae5d"]
+[ext_resource type="Script" uid="uid://cmy5g5ajeav6d" path="res://camera_rotate.gd" id="2_ouk20"]
+[ext_resource type="Texture2D" uid="uid://b4vrvu8imda7d" path="res://ZST-logo-Nadruk-448x212.png" id="3_ytr4m"]
+[ext_resource type="Texture2D" uid="uid://lctxyyk5rewb" path="res://66a88f85aacd7-500x333.png" id="4_l48gv"]
+[ext_resource type="Texture2D" uid="uid://bqls0k3h40tyf" path="res://unnamed.png" id="5_ytr4m"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ouk20"]
+sky_horizon_color = Color(0.38775334, 0.66125053, 0.9195845, 1)
+
+[sub_resource type="Sky" id="Sky_u52ul"]
+sky_material = SubResource("ProceduralSkyMaterial_ouk20")
+
+[sub_resource type="Environment" id="Environment_4hy44"]
+background_mode = 2
+sky = SubResource("Sky_u52ul")
+ambient_light_color = Color(0.22959325, 0.22959325, 0.22959322, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ytr4m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l48gv"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ytr4m"]
+
+[sub_resource type="Theme" id="Theme_l48gv"]
+
+[node name="Node3D" type="Node3D" unique_id=539384642]
+
+[node name="CameraRotate" type="SpringArm3D" parent="." unique_id=534818582]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.0820827, 11.917311)
+spring_length = 20.0
+script = ExtResource("2_ouk20")
+
+[node name="Camera3D" type="Camera3D" parent="CameraRotate" unique_id=1829593044]
+transform = Transform3D(1, 0, 0, 0, 0.9288225, 0.37052497, 0, -0.37052497, 0.9288225, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=675686419]
+environment = SubResource("Environment_4hy44")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1170276951]
+transform = Transform3D(0.9135454, 0.30696803, -0.26684326, 0, 0.656059, 0.75470954, 0.40673664, -0.68946147, 0.5993397, 0, 9.50968, 0)
+
+[node name="Obstacle" type="CSGBox3D" parent="." unique_id=2020220815]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49342155, 0)
+use_collision = true
+
+[node name="Obstacle2" type="CSGBox3D" parent="." unique_id=1979155365]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.445857, 0.49342155, 0)
+use_collision = true
+
+[node name="Obstacle3" type="CSGBox3D" parent="." unique_id=351952763]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49342155, 8.999193)
+use_collision = true
+
+[node name="Obstacle4" type="CSGBox3D" parent="." unique_id=1727968575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.445857, 0.49342155, 8.999193)
+use_collision = true
+
+[node name="Obstacle5" type="CSGBox3D" parent="." unique_id=1278845052]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49342155, -7.885166)
+use_collision = true
+
+[node name="Obstacle6" type="CSGBox3D" parent="." unique_id=1798231926]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.727528, 2.2039356, -7.885166)
+use_collision = true
+size = Vector3(5, 5, 1)
+
+[node name="Obstacle7" type="CSGBox3D" parent="." unique_id=1583402349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.445857, 0.49342155, -7.885166)
+use_collision = true
+
+[node name="hanger" parent="." unique_id=1396238547 instance=ExtResource("2_mae5d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.505554, 6.3499417, -1.7913494)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=2024643635]
+use_collision = true
+size = Vector3(100, 0.055, 100)
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1693314723]
+offset_right = 1153.0
+offset_bottom = 60.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ytr4m")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer" unique_id=1384138965]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="PanelContainer/HBoxContainer" unique_id=1171522686]
+layout_mode = 2
+text = "To Battle!"
+
+[node name="PanelContainer2" type="PanelContainer" parent="." unique_id=1734921812]
+offset_left = -5.0
+offset_top = 530.0
+offset_right = 1155.0
+offset_bottom = 649.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_l48gv")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer2" unique_id=2083897364]
+material = SubResource("CanvasItemMaterial_ytr4m")
+layout_mode = 2
+theme = SubResource("Theme_l48gv")
+alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="PanelContainer2/HBoxContainer" unique_id=999933388]
+position = Vector2(121, 59.5)
+scale = Vector2(0.45982143, 0.43867925)
+texture = ExtResource("3_ytr4m")
+
+[node name="Sprite2D2" type="Sprite2D" parent="PanelContainer2/HBoxContainer" unique_id=1064868535]
+position = Vector2(601, 53)
+scale = Vector2(2.078252, 2.005618)
+texture = ExtResource("4_l48gv")
+
+[node name="Sprite2D3" type="Sprite2D" parent="PanelContainer2/HBoxContainer" unique_id=2126666439]
+position = Vector2(1077, 56.999985)
+scale = Vector2(0.225, 0.225)
+texture = ExtResource("5_ytr4m")
