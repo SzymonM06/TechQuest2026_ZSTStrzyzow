@@ -3,7 +3,7 @@ extends Node2D
 var selection = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	$Label3.visible = false
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -23,7 +23,11 @@ func _process(delta: float) -> void:
 	else:
 		$Label2.text = "Wybierz pojazd"
 		$Label.text = "Wybierz pojazd by dowiedzieć się więcej."
-
+		
+	if selection != 0:
+		$StartButton.visible = true
+	else:
+		$StartButton.visible = false
 
 func _on_button_pressed() -> void:
 	selection = 1
@@ -31,3 +35,12 @@ func _on_button_pressed() -> void:
 
 func _on_button_2_pressed() -> void:
 	selection = 2
+
+
+func _on_start_button_pressed() -> void:
+	
+	if selection == 1:
+		$Label3.visible = true
+		await get_tree().create_timer(2).timeout
+		get_tree().change_scene_to_file("res://level.tscn")
+		
