@@ -3,3 +3,4 @@
 [node name="Level" type="Node3D" unique_id=1823335500]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=898755860]
+size = Vector3(20, 0.055, 20)

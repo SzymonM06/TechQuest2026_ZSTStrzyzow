@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://doucyc7yewk46"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_sh265"]
+
+[node name="Player" type="Node3D" unique_id=534327215]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=529192826]
+transform = Transform3D(1, 0, 0, 0, 0.92, 0, 0, 0, 2.195, 0, 0, 0)
+mesh = SubResource("BoxMesh_sh265")
+
+[node name="RayCast3D" type="RayCast3D" parent="." unique_id=988494428]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34189695, 1.0890927)
+target_position = Vector3(0, 0, 1.755)
