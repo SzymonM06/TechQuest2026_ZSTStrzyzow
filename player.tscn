@@ -1,6 +1,13 @@
 [gd_scene format=3 uid="uid://doucyc7yewk46"]
 
+[ext_resource type="Script" uid="uid://ppw5ro6uq02j" path="res://spring_arm_3d.gd" id="1_4flbx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4flbx"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.3277308, 0.47968155, 0.15040213, 1)
+
 [sub_resource type="BoxMesh" id="BoxMesh_sh265"]
+material = SubResource("StandardMaterial3D_4flbx")
 
 [node name="Player" type="Node3D" unique_id=534327215]
 
@@ -11,3 +18,11 @@ mesh = SubResource("BoxMesh_sh265")
 [node name="RayCast3D" type="RayCast3D" parent="." unique_id=988494428]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34189695, 1.0890927)
 target_position = Vector3(0, 0, 1.755)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=1636197081]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5448774, -0.24395579)
+spring_length = -2.5
+script = ExtResource("1_4flbx")
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D" unique_id=1494288965]
+transform = Transform3D(-1, 0, 8.742278e-08, 4.371139e-08, 0.8660254, 0.5, -7.5710346e-08, 0.5, -0.8660254, 0, 0, 0)
