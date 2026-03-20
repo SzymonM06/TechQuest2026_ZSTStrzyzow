@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Nowy projekt gry"
-run/main_scene="uid://dsf4v2pwe14fw"
+run/main_scene="uid://dvee0merabe2p"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
