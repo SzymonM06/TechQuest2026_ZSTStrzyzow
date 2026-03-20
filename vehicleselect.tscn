@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://d0vxodfdnokg1"]
 
 [ext_resource type="Script" uid="uid://cuuw374agj0od" path="res://vehicleselect.gd" id="1_n444f"]
+[ext_resource type="Texture2D" uid="uid://cccg77g4ltfvd" path="res://assets/BORSUK.jpg" id="2_jc7ht"]
+[ext_resource type="Texture2D" uid="uid://xiayqeds8eb8" path="res://assets/DSC_0611.jpg" id="3_222cp"]
 
 [sub_resource type="Gradient" id="Gradient_di12n"]
 offsets = PackedFloat32Array(0, 0.5327381, 1)
@@ -51,7 +53,7 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_jc7ht")
 text = "Samobieżna haubica Krab"
 
 [node name="Label2" type="Label" parent="." unique_id=1558994118]
-offset_left = 424.0
+offset_left = 311.0
 offset_top = 35.0
 offset_right = 1107.0
 offset_bottom = 96.0
@@ -88,6 +90,26 @@ offset_top = 613.0
 offset_right = 195.0
 offset_bottom = 636.0
 text = "Wczytywanie..."
+
+[node name="Borsuk" type="Sprite2D" parent="." unique_id=2114298801]
+position = Vector2(199.99997, 290)
+scale = Vector2(0.28625003, 0.37074086)
+texture = ExtResource("2_jc7ht")
+
+[node name="Borsuk2" type="Sprite2D" parent="." unique_id=724005004]
+position = Vector2(561.375, 289.9375)
+scale = Vector2(0.30270836, 0.3705556)
+texture = ExtResource("2_jc7ht")
+
+[node name="Dsc0611" type="Sprite2D" parent="." unique_id=496613289]
+position = Vector2(200, 289.75)
+scale = Vector2(0.2442857, 0.2687768)
+texture = ExtResource("3_222cp")
+
+[node name="Dsc0612" type="Sprite2D" parent="." unique_id=1388877441]
+position = Vector2(561, 290)
+scale = Vector2(0.25857142, 0.2687768)
+texture = ExtResource("3_222cp")
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
