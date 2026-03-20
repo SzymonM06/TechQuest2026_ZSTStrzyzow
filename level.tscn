@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dvee0merabe2p"]
 
 [ext_resource type="PackedScene" uid="uid://doucyc7yewk46" path="res://player.tscn" id="1_u52ul"]
+[ext_resource type="PackedScene" uid="uid://dpy71wg55r0hx" path="res://assets/hanger.glb" id="2_vonw3"]
 
 [sub_resource type="Sky" id="Sky_u52ul"]
 
@@ -53,3 +54,6 @@ size = Vector3(5, 5, 1)
 [node name="Obstacle7" type="CSGBox3D" parent="." unique_id=1275760546]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.445857, 0.49342155, -7.885166)
 use_collision = true
+
+[node name="hanger" parent="." unique_id=849735318 instance=ExtResource("2_vonw3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.505554, 6.3499417, -1.7913494)
