@@ -25,6 +25,9 @@ sky_material = SubResource("ProceduralSkyMaterial_ouk20")
 background_mode = 2
 sky = SubResource("Sky_u52ul")
 ambient_light_color = Color(0.22959325, 0.22959325, 0.22959322, 1)
+fog_enabled = true
+fog_light_color = Color(0.08791865, 0.04980298, 0.0068103177, 1)
+fog_density = 0.28
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ghu3p"]
 resource_name = "[Concrete_Aggregate_Smoke]"
@@ -837,11 +840,17 @@ texture = SubResource("GradientTexture2D_3ls4m")
 
 [sub_resource type="Theme" id="Theme_l48gv"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jspdm"]
+albedo_texture = ExtResource("6_4ndjb")
+metallic = 1.0
+
 [sub_resource type="QuadMesh" id="QuadMesh_g7jxm"]
+material = SubResource("StandardMaterial3D_jspdm")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0uje5"]
 resource_name = "Material.002"
 cull_mode = 2
+shading_mode = 2
 albedo_color = Color(0.29991162, 0.36962295, 0.2739273, 1)
 roughness = 0.5
 
@@ -1841,7 +1850,7 @@ shadow_mesh = SubResource("ArrayMesh_68awh")
 script = ExtResource("1_jspdm")
 
 [node name="CameraRotate" type="SpringArm3D" parent="." unique_id=534818582]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.87, 2.236417, -17.563)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.913204, 2.236417, -17.563)
 spring_length = 4.0
 script = ExtResource("2_ouk20")
 
@@ -3416,11 +3425,11 @@ scale = Vector2(0.225, 0.225)
 texture = ExtResource("5_ytr4m")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1218283361]
-transform = Transform3D(7, 0, 0, 0, -3.059797e-07, 7, 0, -7, -3.059797e-07, -30.869928, 0.135, -17.246)
+transform = Transform3D(8, 0, 0, 0, -3.496911e-07, 8, 0, -8, -3.496911e-07, -28.913132, 0.135, -17.246)
 mesh = SubResource("QuadMesh_g7jxm")
 
 [node name="bwp_borsuk" type="Node3D" parent="." unique_id=339144682]
-transform = Transform3D(-0.83867055, 0, -0.54463905, 0, 1, 0, 0.54463905, 0, -0.83867055, -32.836758, 0.8082694, -17.444378)
+transform = Transform3D(-0.83867055, 0, -0.54463905, 0, 1, 0, 0.54463905, 0, -0.83867055, -31.093327, 0.8082694, -17.444378)
 
 [node name="Cube_001" type="MeshInstance3D" parent="bwp_borsuk" unique_id=1669574208]
 transform = Transform3D(-0.42000002, 0, 0, 0, 0.17000002, 0, 0, 0, 0.52, -0.059533484, 0.29809976, -0.013526032)
@@ -3523,7 +3532,7 @@ transform = Transform3D(0.08000004, 0, 0, 0, 0.099999994, 0, 0, 0, 0.29, 0.47196
 mesh = SubResource("ArrayMesh_mkl2e")
 
 [node name="bwp_borsuk2" type="Node3D" parent="." unique_id=1213802899]
-transform = Transform3D(-0.75470954, 0, 0.6560591, 0, 1, 0, -0.6560591, 0, -0.75470954, -28.58407, 0.8082694, -17.444378)
+transform = Transform3D(-0.75470954, 0, 0.6560591, 0, 1, 0, -0.6560591, 0, -0.75470954, -26.84064, 0.8082694, -17.444378)
 
 [node name="Cube_001" type="MeshInstance3D" parent="bwp_borsuk2" unique_id=1734063627]
 transform = Transform3D(-0.42000002, 0, 0, 0, 0.17000002, 0, 0, 0, 0.52, -0.059533484, 0.29809976, -0.013526032)
@@ -3624,5 +3633,11 @@ mesh = SubResource("ArrayMesh_h36w2")
 [node name="Cube_002" type="MeshInstance3D" parent="bwp_borsuk2" unique_id=945505736]
 transform = Transform3D(0.08000004, 0, 0, 0, 0.099999994, 0, 0, 0, 0.29, 0.47196755, 0.38251206, -0.18151158)
 mesh = SubResource("ArrayMesh_mkl2e")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1093487103]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -28.880173, 4.7780137, -17.076199)
+light_color = Color(0.8007841, 0.6754373, 0.46149254, 1)
+light_energy = 10.0
+spot_range = 7.3551936
 
 [connection signal="pressed" from="PanelContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]
