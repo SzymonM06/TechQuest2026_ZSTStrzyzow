@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://b86tkg4dnvd8g"]
+[gd_scene format=3 uid="uid://3e2hqvxaa6q1"]
+
+[ext_resource type="PackedScene" uid="uid://1aqaxg6wa3cr" path="res://assets/target.glb" id="1_t2jmu"]
 
 [node name="Target" type="Node3D" unique_id=1326799935]
+
+[node name="target" parent="." unique_id=1251873388 instance=ExtResource("1_t2jmu")]
