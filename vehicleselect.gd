@@ -45,4 +45,8 @@ func _on_start_button_pressed() -> void:
 		$Label3.visible = true
 		await get_tree().create_timer(0.5).timeout
 		get_tree().change_scene_to_file("res://level.tscn")
+	if selection == 2:
+		$Label3.visible = true
+		await get_tree().create_timer(0.5).timeout
+		get_tree().change_scene_to_file("res://level2.tscn")
 		

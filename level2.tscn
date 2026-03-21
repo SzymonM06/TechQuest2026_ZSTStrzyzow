@@ -1,6 +1,5 @@
-[gd_scene format=4 uid="uid://calu6a1pu62y8"]
+[gd_scene format=4 uid="uid://ctm4gp5tcypjt"]
 
-[ext_resource type="PackedScene" uid="uid://doucyc7yewk46" path="res://player.tscn" id="1_rmy57"]
 [ext_resource type="PackedScene" uid="uid://dpy71wg55r0hx" path="res://assets/hanger.glb" id="2_qulpo"]
 [ext_resource type="PackedScene" uid="uid://cyeegooj4dxi0" path="res://assets/fence.glb" id="3_jifot"]
 [ext_resource type="PackedScene" uid="uid://bspvd7nph08lg" path="res://assets/mountain.glb" id="4_3opl0"]
@@ -8,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://yjpo6e6sn403" path="res://assets/water-texture-top-view-background-design-illustration-free-vector.jpg" id="6_s8oj7"]
 [ext_resource type="Texture2D" uid="uid://lgwm1vafqscs" path="res://assets/piasek-tekstura-32658629.webp" id="7_mw4xc"]
 [ext_resource type="PackedScene" uid="uid://b86tkg4dnvd8g" path="res://target.tscn" id="8_r8rrl"]
+[ext_resource type="PackedScene" uid="uid://bxlak8otvr5y6" path="res://playerKrab.tscn" id="8_rmy57"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_f2txt"]
 size = Vector3(0.24391174, 2.847412, 17.058044)
@@ -317,7 +317,7 @@ size = Vector3(3.345, 5, 25.680603)
 [sub_resource type="BoxShape3D" id="BoxShape3D_2orkt"]
 size = Vector3(1, 4.0097656, 11.567627)
 
-[node name="Level" type="Node3D" unique_id=1823335500]
+[node name="Level2" type="Node3D" unique_id=1823335500]
 
 [node name="hangar_collisions" type="StaticBody3D" parent="." unique_id=214248842]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.192188, 0.6140305, -96.49349)
@@ -340,9 +340,6 @@ debug_color = Color(0.6134384, 0.52336663, 0.3527232, 0.41960785)
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="hangar_collisions" unique_id=543064349]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1185913, -0.7296103, -2.045105)
 shape = SubResource("BoxShape3D_n6hdu")
-
-[node name="Borsuk" parent="." unique_id=534327215 instance=ExtResource("1_rmy57")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.192188, 0.6476978, -96.49349)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=420973390]
 environment = SubResource("Environment_vonw3")
@@ -6653,7 +6650,7 @@ debug_color = Color(0.9124945, 9.8186734e-05, 0.72477496, 0.41960785)
 transform = Transform3D(1, 0, 0, 0, 0.4965941, 0, 0, 0, 1, -24.27782, -0.11477947, -92.55952)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="road" unique_id=1932647471]
-transform = Transform3D(8.342856, 0, 0, 0, 0.10210318, 0, 0, 0, 28.48236, 0, 0, 0)
+transform = Transform3D(8.342855, 0, 0, 0, 0.10210318, 0, 0, 0, 28.482359, 0.0014400482, 2.3841858e-07, 0.0007324219)
 mesh = SubResource("BoxMesh_0b4ue")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="road" unique_id=458302210]
@@ -7440,3 +7437,6 @@ transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, 
 
 [node name="Target4" parent="." unique_id=1856527467 instance=ExtResource("8_r8rrl")]
 transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -27.27108, 0.19625515, -73.34038)
+
+[node name="PlayerKrab" parent="." unique_id=18152314 instance=ExtResource("8_rmy57")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.481363, 0.76357186, -93.251724)
