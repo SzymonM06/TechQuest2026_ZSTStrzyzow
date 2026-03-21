@@ -15,4 +15,6 @@ func _process(delta: float) -> void:
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body.is_in_group("bullet") and !onfloor:
 		$AnimationPlayer.play("falling")
+		$Area3D.visible = false
+		get_tree().current_scene._add_point()
 		onfloor = true
