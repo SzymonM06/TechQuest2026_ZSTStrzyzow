@@ -1,19 +1,15 @@
 [gd_scene format=3 uid="uid://dvee0merabe2p"]
 
 [ext_resource type="PackedScene" uid="uid://doucyc7yewk46" path="res://player.tscn" id="1_u52ul"]
-[ext_resource type="Texture2D" uid="uid://70ltfhw071up" path="res://assets/container_9bce1357-50ea-43bb-9f7a-85fae0e7b888.jpg" id="2_h6smj"]
 [ext_resource type="PackedScene" uid="uid://dpy71wg55r0hx" path="res://assets/hanger.glb" id="2_vonw3"]
 [ext_resource type="Texture2D" uid="uid://b0drq27oy2b7g" path="res://assets/hanger_Metal_Rough.jpg" id="3_2orkt"]
 [ext_resource type="PackedScene" uid="uid://pivomrwypbf7" path="res://assets/bwp_borsuk.glb" id="3_oi3di"]
 [ext_resource type="PackedScene" uid="uid://b46xs05ekkjcq" path="res://assets/tree.glb" id="4_0b4ue"]
 [ext_resource type="PackedScene" uid="uid://cb50jw01vo3w" path="res://assets/christmas_tree.glb" id="4_n6hdu"]
 [ext_resource type="PackedScene" uid="uid://d35ahncylxcf4" path="res://assets/two_tree.glb" id="5_km5ld"]
-[ext_resource type="PackedScene" uid="uid://0641i37xu44x" path="res://assets/oil.glb" id="7_aicyk"]
 [ext_resource type="PackedScene" uid="uid://brgk82ntjfnpt" path="res://assets/small_tree.glb" id="7_i2t4f"]
-[ext_resource type="PackedScene" uid="uid://chdhwrw70eahb" path="res://assets/container.glb" id="8_aicyk"]
 [ext_resource type="PackedScene" uid="uid://bspvd7nph08lg" path="res://assets/mountain.glb" id="8_km5ld"]
 [ext_resource type="PackedScene" uid="uid://bgdykm4mhdx8g" path="res://assets/small_grass.glb" id="9_i2t4f"]
-[ext_resource type="PackedScene" uid="uid://cyeegooj4dxi0" path="res://assets/fence.glb" id="10_v5j5c"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8cye3"]
 sky_horizon_color = Color(0.3882353, 0.6627451, 0.91764706, 1)
@@ -61,16 +57,13 @@ material = SubResource("StandardMaterial3D_f2txt")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_oi3di"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ait7k"]
-size = Vector3(3.065, 1.894, 0.325)
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_km5ld"]
 size = Vector3(0.784, 0.093, 0.052)
 
 [node name="Level" type="Node3D" unique_id=1823335500]
 
 [node name="Borsuk" parent="." unique_id=534327215 instance=ExtResource("1_u52ul")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.666588, 0.63203454, -72.95182)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.023759, 0.8542713, -0.76218605)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=420973390]
 environment = SubResource("Environment_vonw3")
@@ -244,24 +237,7 @@ transform = Transform3D(1.9165044, 0, 0, 0, 1, 0, 0, 0, 3.6676958, 0, -0.5834446
 shape = SubResource("BoxShape3D_2orkt")
 
 [node name="hanger" parent="." unique_id=849735318 instance=ExtResource("2_vonw3")]
-transform = Transform3D(0.405, 0, 0, 0, 0.405, 0, 0, 0, 0.405, -19.755695, 2.369606, -90.19935)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="hanger" unique_id=1638705455]
-transform = Transform3D(21.62158, 0, 0, 0, 0.21939021, 0, 0, 0, 45.412075, -11.249054, -5.9287753, -20.73491)
-material_override = SubResource("StandardMaterial3D_8b0r0")
-mesh = SubResource("BoxMesh_i2t4f")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="hanger" unique_id=281149096]
-transform = Transform3D(1.0000005, 0, 0, 0, 1.0000005, 0, 0, 0, 33.221542, -11.290966, -6.406705, -19.756989)
-shape = SubResource("BoxShape3D_i2t4f")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="hanger" unique_id=963759676]
-transform = Transform3D(1.0000005, 0, 0, 0, 1.0000005, 0, 0, 0, 1.0000005, 3.6362305, -4.2512608, -35.005814)
-shape = SubResource("BoxShape3D_8cye3")
-
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="hanger" unique_id=1117432115]
-transform = Transform3D(1.0000005, 0, 0, 0, 1.0000005, 0, 0, 0, 1.0000005, -5.547653, -4.251262, -43.964798)
-shape = SubResource("BoxShape3D_8cye3")
+transform = Transform3D(0.405, 0, 0, 0, 0.405, 0, 0, 0, 0.405, -19.745031, 2.3927946, -90.207146)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=374903642]
 
