@@ -2443,7 +2443,7 @@ shape = SubResource("BoxShape3D_0b4ue")
 debug_color = Color(0.9124945, 9.8186734e-05, 0.72477496, 0.41960785)
 
 [node name="road" type="StaticBody3D" parent="." unique_id=1451417084]
-transform = Transform3D(1, 0, 0, 0, 0.4965941, 0, 0, 0, 1, -24.27782, -0.11477947, -92.55952)
+transform = Transform3D(1, 0, 0, 0, 0.4965941, 0, 0, 0, 1, -24.27782, 0.099102974, -92.55952)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="road" unique_id=1932647471]
 transform = Transform3D(8.342856, 0, 0, 0, 0.10210318, 0, 0, 0, 28.48236, 0, 0, 0)
@@ -2736,10 +2736,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.0708923)
 shape = SubResource("BoxShape3D_km5ld")
 
 [node name="road3" type="StaticBody3D" parent="." unique_id=876110883]
-transform = Transform3D(0.3175499, 0, -0.17594086, 0, 1, 0, 0.2098471, 0, 0.2662415, -29.3811, -0.018766642, -83.6479)
+transform = Transform3D(0.3175499, 0, -0.17594086, 0, 1, 0, 0.2098471, 0, 0.2662415, -29.3811, -0.09494591, -83.6479)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="road3" unique_id=1284323767]
-transform = Transform3D(8.036036, 0, -7.653248, 0, 0.10210318, 0, 2.2417364, 0, 27.434887, 0, 0.11652565, 0)
+transform = Transform3D(8.036036, 0, -7.653248, 0, 0.10210318, 0, 2.2417364, 0, 27.43489, 0, 0.110459864, 0)
 material_override = SubResource("StandardMaterial3D_u3yai")
 mesh = SubResource("BoxMesh_0b4ue")
 
