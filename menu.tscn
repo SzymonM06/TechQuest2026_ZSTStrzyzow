@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cjj8rjolx0nhn" path="res://assets/hanger_Cladding_Siding_White.jpg" id="8_5h80m"]
 [ext_resource type="Texture2D" uid="uid://b0drq27oy2b7g" path="res://assets/hanger_Metal_Rough.jpg" id="9_w25hu"]
 [ext_resource type="Texture2D" uid="uid://c4f14nrcnc325" path="res://assets/hanger_louhbehi.jpg" id="10_td6mg"]
+[ext_resource type="PackedScene" uid="uid://db2h5v2giv0wk" path="res://assets/krab.glb" id="15_oxnod"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ouk20"]
 sky_horizon_color = Color(0.38775334, 0.66125053, 0.9195845, 1)
@@ -3424,112 +3425,45 @@ position = Vector2(1077, 60)
 scale = Vector2(0.225, 0.225)
 texture = ExtResource("5_ytr4m")
 
+[node name="krab" parent="PanelContainer2/HBoxContainer" unique_id=881761936 instance=ExtResource("15_oxnod")]
+transform = Transform3D(-0.7230756, 0, -0.69076884, 0, 1, 0, 0.69076884, 0, -0.7230756, -31.269098, 0.92281425, -16.87423)
+
+[node name="Cube_001" parent="PanelContainer2/HBoxContainer/krab" index="0" unique_id=815623846]
+transform = Transform3D(0.5400001, 0, 0, 0, 0.22, 0, -2.9802322e-08, 0, 0.59000003, 0.0027999878, 0.1982286, 0.2670288)
+
+[node name="Cube_011" parent="PanelContainer2/HBoxContainer/krab" index="2" unique_id=1888513359]
+transform = Transform3D(0.05130305, 0.037587702, 0, -0.1409539, 0.013680809, 0, 0, 1.8626451e-09, 0.100000046, 0.62619877, 0.28136623, 0.39577866)
+
+[node name="Cube_012" parent="PanelContainer2/HBoxContainer/krab" index="3" unique_id=1175296134]
+transform = Transform3D(0.05130305, 0.037587702, 0, -0.1409539, 0.013680809, 0, 0, 1.8626451e-09, 0.100000046, 0.6261978, 0.28136623, 0.6411667)
+
+[node name="Cube_013" parent="PanelContainer2/HBoxContainer/krab" index="4" unique_id=2052361854]
+transform = Transform3D(-0.05130305, -0.037587702, 0, -0.1409539, 0.013680809, 0, 0, -1.8626451e-09, 0.100000046, -0.6204262, 0.28136623, 0.6411667)
+
+[node name="Cube_014" parent="PanelContainer2/HBoxContainer/krab" index="5" unique_id=587807730]
+transform = Transform3D(-0.05130305, -0.037587702, 0, -0.1409539, 0.013680809, 0, 0, -1.8626451e-09, 0.100000046, -0.62042713, 0.28136623, 0.39577866)
+
+[node name="Cube_015" parent="PanelContainer2/HBoxContainer/krab" index="6" unique_id=1310414089]
+transform = Transform3D(-0.05130305, -0.037587702, 0, -0.1409539, 0.013680809, 0, 0, -1.8626451e-09, 0.100000046, -0.6204281, 0.28136623, -0.095142365)
+
+[node name="Cylinder_005" parent="PanelContainer2/HBoxContainer/krab" index="7" unique_id=1607224938]
+transform = Transform3D(0.20000002, 0, 0, 0, 0.02, 0, 0, 0, 0.20000002, 0.32280064, 0.43518555, 0.27674866)
+
+[node name="Cylinder_006" parent="PanelContainer2/HBoxContainer/krab" index="8" unique_id=1597334128]
+transform = Transform3D(0.20000002, 0, 0, 0, 0.02, 0, 0, 0, 0.20000002, -0.3172016, 0.43518555, 0.27675247)
+
+[node name="Cube_016" parent="PanelContainer2/HBoxContainer/krab" index="9" unique_id=876169237]
+transform = Transform3D(0.14000002, 0, -7.450581e-09, 0, 0.1, 0, 7.450581e-09, 0, 0.14000002, 0.24140644, 0.30467474, 0.9905548)
+
+[node name="Cube_017" parent="PanelContainer2/HBoxContainer/krab" index="10" unique_id=1439222088]
+transform = Transform3D(0.22999999, 0, 0, 0, 0.14, 0, 7.450581e-09, 0, 0.10000001, -0.20349216, 0.24658394, 0.94104767)
+
+[node name="Cylinder_016" parent="PanelContainer2/HBoxContainer/krab" index="22" unique_id=1928236757]
+transform = Transform3D(0, -0.08, 0, -0.1, 0, 0, 0, 0, -0.10000001, -0.5568571, -0.5143821, 0.779747)
+
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1218283361]
 transform = Transform3D(8, 0, 0, 0, -3.496911e-07, 8, 0, -8, -3.496911e-07, -28.913132, 0.135, -17.246)
 mesh = SubResource("QuadMesh_g7jxm")
-
-[node name="bwp_borsuk" type="Node3D" parent="." unique_id=339144682]
-transform = Transform3D(-0.83867055, 0, -0.54463905, 0, 1, 0, 0.54463905, 0, -0.83867055, -31.093327, 0.8082694, -17.444378)
-
-[node name="Cube_001" type="MeshInstance3D" parent="bwp_borsuk" unique_id=1669574208]
-transform = Transform3D(-0.42000002, 0, 0, 0, 0.17000002, 0, 0, 0, 0.52, -0.059533484, 0.29809976, -0.013526032)
-mesh = SubResource("ArrayMesh_1baqx")
-
-[node name="Cylinder_003" type="MeshInstance3D" parent="bwp_borsuk" unique_id=308139074]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.118302956, 0.54313296, 0.031345677)
-mesh = SubResource("ArrayMesh_3i13q")
-
-[node name="Cube" type="MeshInstance3D" parent="bwp_borsuk" unique_id=1946484829]
-transform = Transform3D(0.69, 0, 0, 0, 0.3, 0, 0, 0, 1, -0.00011764498, -0.11502552, -0.45861447)
-mesh = SubResource("ArrayMesh_w5vhs")
-
-[node name="Cube_003" type="MeshInstance3D" parent="bwp_borsuk" unique_id=1606455562]
-transform = Transform3D(0.088, 0, 0, 0, 0.27000004, 0, 0, 0, 1.18, 0.517501, -0.40018147, -0.39184505)
-mesh = SubResource("ArrayMesh_dynlg")
-
-[node name="Cylinder_004" type="MeshInstance3D" parent="bwp_borsuk" unique_id=1563242702]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, 0.517501, -0.53995895, 0.110755)
-mesh = SubResource("ArrayMesh_3p7pw")
-
-[node name="Cylinder_005" type="MeshInstance3D" parent="bwp_borsuk" unique_id=1645332512]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, 0.517501, -0.53995895, 0.40853974)
-mesh = SubResource("ArrayMesh_xnc0v")
-
-[node name="Cylinder_006" type="MeshInstance3D" parent="bwp_borsuk" unique_id=6150389]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, 0.517501, -0.38636476, 0.655126)
-mesh = SubResource("ArrayMesh_bytij")
-
-[node name="Cylinder_007" type="MeshInstance3D" parent="bwp_borsuk" unique_id=96440855]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, 0.517501, -0.53995895, -0.21207124)
-mesh = SubResource("ArrayMesh_i5nc7")
-
-[node name="Cylinder_008" type="MeshInstance3D" parent="bwp_borsuk" unique_id=45406783]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, 0.517501, -0.53995895, -0.8468907)
-mesh = SubResource("ArrayMesh_7bufs")
-
-[node name="Cylinder_009" type="MeshInstance3D" parent="bwp_borsuk" unique_id=1655408351]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, 0.517501, -0.53995895, -0.5240644)
-mesh = SubResource("ArrayMesh_1ygll")
-
-[node name="Cylinder_010" type="MeshInstance3D" parent="bwp_borsuk" unique_id=607514046]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, 0.517501, -0.53995895, -1.1458842)
-mesh = SubResource("ArrayMesh_omyp4")
-
-[node name="Cylinder_011" type="MeshInstance3D" parent="bwp_borsuk" unique_id=1598765931]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, 0.517501, -0.4063508, -1.4401832)
-mesh = SubResource("ArrayMesh_vppnx")
-
-[node name="Cylinder_012" type="MeshInstance3D" parent="bwp_borsuk" unique_id=1523734642]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, -0.51770735, -0.4063508, -1.4401832)
-mesh = SubResource("ArrayMesh_kwd2w")
-
-[node name="Cylinder_013" type="MeshInstance3D" parent="bwp_borsuk" unique_id=1365538584]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, -0.51770735, -0.53995895, -1.1458842)
-mesh = SubResource("ArrayMesh_sdn53")
-
-[node name="Cylinder_014" type="MeshInstance3D" parent="bwp_borsuk" unique_id=1808460801]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, -0.51770735, -0.53995895, -0.5240644)
-mesh = SubResource("ArrayMesh_k7nco")
-
-[node name="Cylinder_015" type="MeshInstance3D" parent="bwp_borsuk" unique_id=1832422032]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, -0.51770735, -0.53995895, -0.8468907)
-mesh = SubResource("ArrayMesh_bahmj")
-
-[node name="Cylinder_016" type="MeshInstance3D" parent="bwp_borsuk" unique_id=89630964]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, -0.51770735, -0.53995895, -0.21207124)
-mesh = SubResource("ArrayMesh_b5sui")
-
-[node name="Cylinder_017" type="MeshInstance3D" parent="bwp_borsuk" unique_id=1410403914]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, -0.51770735, -0.53995895, 0.40853974)
-mesh = SubResource("ArrayMesh_u86nv")
-
-[node name="Cylinder_018" type="MeshInstance3D" parent="bwp_borsuk" unique_id=300544345]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, -0.51770735, -0.53995895, 0.110755)
-mesh = SubResource("ArrayMesh_nwusl")
-
-[node name="Cube_004" type="MeshInstance3D" parent="bwp_borsuk" unique_id=207602187]
-transform = Transform3D(0.088, 0, 0, 0, 0.27000004, 0, 0, 0, 1.18, -0.51770735, -0.40018147, -0.39184505)
-mesh = SubResource("ArrayMesh_lsct5")
-
-[node name="Cylinder_019" type="MeshInstance3D" parent="bwp_borsuk" unique_id=1964411820]
-transform = Transform3D(0, 0.07, 0, -0.11, 0, 0, 0, 0, 0.11, -0.517501, -0.38636476, 0.6551264)
-mesh = SubResource("ArrayMesh_fcbd5")
-
-[node name="Cylinder" type="MeshInstance3D" parent="bwp_borsuk" unique_id=942500949]
-transform = Transform3D(0.055, 0, 0, 0, 0, -0.055, 0, 0.12, 0, -0.0004863236, 0.29760048, -0.64425546)
-mesh = SubResource("ArrayMesh_854v4")
-
-[node name="Cylinder_001" type="MeshInstance3D" parent="bwp_borsuk" unique_id=1706424983]
-transform = Transform3D(0.02, 0, 0, 0, 0, -0.02, 0, 0.29, 0, 0, 0.29747, -0.97222406)
-mesh = SubResource("ArrayMesh_hqdf1")
-
-[node name="Cylinder_002" type="MeshInstance3D" parent="bwp_borsuk" unique_id=57888513]
-transform = Transform3D(0.028, 0, 0, 0, 0, -0.028, 0, -0.025, 0, 0, 0.29747, -1.3113294)
-mesh = SubResource("ArrayMesh_h36w2")
-
-[node name="Cube_002" type="MeshInstance3D" parent="bwp_borsuk" unique_id=2043191764]
-transform = Transform3D(0.08000004, 0, 0, 0, 0.099999994, 0, 0, 0, 0.29, 0.47196755, 0.38251206, -0.18151158)
-mesh = SubResource("ArrayMesh_mkl2e")
 
 [node name="bwp_borsuk2" type="Node3D" parent="." unique_id=1213802899]
 transform = Transform3D(-0.75470954, 0, 0.6560591, 0, 1, 0, -0.6560591, 0, -0.75470954, -26.84064, 0.8082694, -17.444378)
@@ -3641,3 +3575,5 @@ light_energy = 10.0
 spot_range = 7.3551936
 
 [connection signal="pressed" from="PanelContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]
+
+[editable path="PanelContainer2/HBoxContainer/krab"]

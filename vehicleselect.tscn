@@ -96,19 +96,9 @@ position = Vector2(199.99997, 290)
 scale = Vector2(0.28625003, 0.37074086)
 texture = ExtResource("2_jc7ht")
 
-[node name="Borsuk2" type="Sprite2D" parent="." unique_id=724005004]
-position = Vector2(561.375, 289.9375)
-scale = Vector2(0.30270836, 0.3705556)
-texture = ExtResource("2_jc7ht")
-
 [node name="Dsc0611" type="Sprite2D" parent="." unique_id=496613289]
 position = Vector2(200, 289.75)
 scale = Vector2(0.2442857, 0.2687768)
-texture = ExtResource("3_222cp")
-
-[node name="Dsc0612" type="Sprite2D" parent="." unique_id=1388877441]
-position = Vector2(561, 290)
-scale = Vector2(0.25857142, 0.2687768)
 texture = ExtResource("3_222cp")
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
