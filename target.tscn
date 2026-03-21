@@ -3,9 +3,6 @@
 [ext_resource type="Script" uid="uid://cgo648plandd0" path="res://target.gd" id="1_e1yvt"]
 [ext_resource type="PackedScene" uid="uid://1aqaxg6wa3cr" path="res://assets/target.glb" id="1_t2jmu"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_t2jmu"]
-size = Vector3(0.12423828, 0.4, 0.3)
-
 [sub_resource type="Animation" id="Animation_t2jmu"]
 length = 0.001
 tracks/0/type = "value"
@@ -35,7 +32,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_e1yvt"]
 resource_name = "falling"
-length = 0.73333335
+length = 0.37
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -43,10 +40,10 @@ tracks/0/path = NodePath("target:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.6666667),
+"times": PackedFloat32Array(0, 0.36666667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 0, 1.5707964)]
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 1.7169677)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -55,10 +52,10 @@ tracks/1/path = NodePath("target:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.6666667),
+"times": PackedFloat32Array(0, 0.36666667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(0, 0, 0), Vector3(-2.5405033, -0.4353002, 0)]
+"values": [Vector3(0, 0, 0), Vector3(-2.541, -0.134, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_5ebp1"]
@@ -96,20 +93,23 @@ _data = {
 &"idle": SubResource("Animation_5ebp1")
 }
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_t2jmu"]
+size = Vector3(0.12423828, 0.4, 0.3)
+
 [node name="Target" type="Node3D" unique_id=1326799935]
 script = ExtResource("1_e1yvt")
 
 [node name="target" parent="." unique_id=1251873388 instance=ExtResource("1_t2jmu")]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="Area3D" type="Area3D" parent="target" unique_id=124489193]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.56, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="target/Area3D" unique_id=476952313]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0020222813, 0.016693413, 0.0026613474)
-shape = SubResource("BoxShape3D_t2jmu")
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1487413357]
 libraries/ = SubResource("AnimationLibrary_uqips")
 
-[connection signal="body_entered" from="target/Area3D" to="." method="_on_area_3d_body_entered"]
+[node name="Area3D" type="Area3D" parent="." unique_id=124489193]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.56, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=476952313]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0020222813, 0.016693413, 0.0026613474)
+shape = SubResource("BoxShape3D_t2jmu")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
