@@ -267,7 +267,7 @@ size = Vector3(250, 15, 1)
 size = Vector3(1, 0.325, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_km5ld"]
-size = Vector3(8.314767, 0.01, 28.099525)
+size = Vector3(3.4166749, 0.01, 6.575)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2orkt"]
 albedo_texture = ExtResource("6_km5ld")
@@ -2676,7 +2676,7 @@ transform = Transform3D(8.378624, 0, 0, 0, 0.23959225, 0, 0, 0, 32.208485, 0, 0,
 shape = SubResource("BoxShape3D_km5ld")
 
 [node name="road9" type="StaticBody3D" parent="." unique_id=1079623610]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.110404246, -57.972416, 1.553036, -77.65885)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.110404246, -57.972416, 0.8718436, -77.65885)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="road9" unique_id=1492375972]
 transform = Transform3D(8.342857, 0, 0, 0, 0.10210318, 0, 0, 0, 28.482363, 0, 0, 0)
@@ -2684,11 +2684,11 @@ material_override = SubResource("StandardMaterial3D_ait7k")
 mesh = SubResource("BoxMesh_0b4ue")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="road9" unique_id=346760388]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.64178467)
+transform = Transform3D(2.2909825, 0, 0, 0, 1, 0, 0, 0, 4.0846815, 0.000415802, 0, 0.64178467)
 shape = SubResource("BoxShape3D_km5ld")
 
 [node name="road10" type="StaticBody3D" parent="." unique_id=2137953897]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.110404246, -66.31549, 1.553036, -77.65885)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.110404246, -66.31549, 0.85986876, -77.65885)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="road10" unique_id=1108679523]
 transform = Transform3D(8.342857, 0, 0, 0, 0.10210318, 0, 0, 0, 28.482363, 0, 0, 0)
@@ -2696,7 +2696,7 @@ material_override = SubResource("StandardMaterial3D_42xju")
 mesh = SubResource("BoxMesh_0b4ue")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="road10" unique_id=1002630494]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15219116, 0, 0.1729126)
+transform = Transform3D(2.309411, 0, 0, 0, 1, 0, 0, 0, 4.115525, -0.15219116, 0, 0.1729126)
 shape = SubResource("BoxShape3D_km5ld")
 
 [node name="road8" type="StaticBody3D" parent="." unique_id=20520175]
@@ -2712,27 +2712,27 @@ transform = Transform3D(8.378624, 0, 0, 0, 0.23959225, 0, 0, 0, 32.208485, 0, 0,
 shape = SubResource("BoxShape3D_km5ld")
 
 [node name="road6" type="StaticBody3D" parent="." unique_id=1821079524]
-transform = Transform3D(0.049361758, 0.27959442, -0.9588485, -0.014374552, 0.96011823, 0.27922466, 0.99867755, -2.7939677e-09, 0.05141217, -50.704323, 0, -77.80597)
+transform = Transform3D(0.05062423, 0.17440438, -0.98337185, -0.008966506, 0.9846741, 0.17417374, 0.99867755, -3.6881476e-09, 0.05141217, -50.704323, -0.30678344, -77.80597)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="road6" unique_id=1369481652]
-transform = Transform3D(3.2328746, -6.2156596e-06, -0.058221996, 5.057999e-08, 0.1019975, -0.046578884, 0.028212875, 0.0007120578, 6.6715827, 0.008300781, 0.62192726, 0.1385727)
+transform = Transform3D(3.2328737, 6.938399e-05, -0.058220923, -0.0019898221, 0.10199715, 0.049518943, 0.028227165, -0.0007564573, 6.6715617, 0.008300781, 0.62192726, 0.13856888)
 material_override = SubResource("StandardMaterial3D_ilwjd")
 mesh = SubResource("BoxMesh_0b4ue")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="road6" unique_id=2132076396]
-transform = Transform3D(0.9999618, -6.093405e-05, -0.008726325, 1.3972387e-08, 0.9999753, -0.0069811344, 0.00872653, 0.006980871, 0.99993736, -0.07765198, 0.62194633, 0.13859558)
+transform = Transform3D(0.9999619, -6.08548e-05, -0.008726303, 1.3970688e-08, 0.99997395, -0.006980926, 0.00872653, 0.0069809346, 0.99993587, -0.07766724, 0.62194633, 0.13859558)
 shape = SubResource("BoxShape3D_km5ld")
 
 [node name="road11" type="StaticBody3D" parent="." unique_id=2115128237]
 transform = Transform3D(0.01787943, -0.35853088, -0.21431361, 0.0068668514, 0.9335178, -0.082310215, 0.37204072, 8.9417973e-10, 0.011818645, -73.08032, -0.15771103, -77.55121)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="road11" unique_id=1481140014]
-transform = Transform3D(8.342856, 4.656613e-10, -5.9604645e-08, 4.94087e-10, 0.10210318, 1.196669e-07, -5.9604645e-08, -7.450581e-09, 28.482363, -0.024795532, 0.6169052, 0.78045654)
+transform = Transform3D(8.34285, 0.0001283505, 0.0007084012, -0.010487512, 0.10202315, 1.1270815, 0.00020730495, -0.0040402557, 28.460066, -0.029678345, 0.52449036, 0.934906)
 material_override = SubResource("StandardMaterial3D_y3bce")
 mesh = SubResource("BoxMesh_0b4ue")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="road11" unique_id=1260209032]
-transform = Transform3D(8.378624, 0, 0, 0, 0.23959225, 0, 0, 0, 32.208485, 0, 0, 1.0708923)
+transform = Transform3D(2.8575704, 4.3150905e-10, -4.4703484e-08, 0, 0.16050562, 2.9802322e-08, -1.4901161e-08, 2.6895617e-07, 4.4049892, 0, 0, 1.0709839)
 shape = SubResource("BoxShape3D_km5ld")
 
 [node name="road3" type="StaticBody3D" parent="." unique_id=876110883]
