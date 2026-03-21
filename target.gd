@@ -1,5 +1,6 @@
 extends Node3D
 
+var onfloor = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,5 +13,6 @@ func _process(delta: float) -> void:
 
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
-	if body.is_in_group("bullet"):
+	if body.is_in_group("bullet") and !onfloor:
 		$AnimationPlayer.play("falling")
+		onfloor = true
