@@ -2247,6 +2247,7 @@ suspension_stiffness = 50.0
 
 [node name="Cylinder_013" type="MeshInstance3D" parent="VehicleWheel3D2" unique_id=1175815158]
 transform = Transform3D(4.808253e-09, -0.07, -1.6609539e-08, -0.11, -3.059797e-09, 5.802776e-18, -7.3182874e-16, 1.0569706e-08, -0.11, 0.02355349, 0.00070005655, -0.0004349947)
+visible = false
 mesh = SubResource("ArrayMesh_sdn53")
 
 [node name="VehicleWheel3D13" type="VehicleWheel3D" parent="." unique_id=532691088]
@@ -2259,6 +2260,7 @@ suspension_stiffness = 50.0
 
 [node name="Cylinder_013" type="MeshInstance3D" parent="VehicleWheel3D13" unique_id=1819374294]
 transform = Transform3D(4.808253e-09, -0.07, -1.6609539e-08, -0.11, -3.059797e-09, 5.802776e-18, -7.3182874e-16, 1.0569706e-08, -0.11, 0.02355349, 0.00070005655, -0.0004349947)
+visible = false
 mesh = SubResource("ArrayMesh_sdn53")
 
 [node name="VehicleWheel3D" type="VehicleWheel3D" parent="." unique_id=1121218235]
@@ -2271,6 +2273,7 @@ suspension_stiffness = 50.0
 
 [node name="Cylinder_015" type="MeshInstance3D" parent="VehicleWheel3D" unique_id=1708316661]
 transform = Transform3D(4.808253e-09, -0.07, -1.6609539e-08, -0.11, -3.059797e-09, 5.802776e-18, -7.3182874e-16, 1.0569706e-08, -0.11, 0.0067177415, 0.00070005655, 0.00040507317)
+visible = false
 mesh = SubResource("ArrayMesh_bahmj")
 
 [node name="VehicleWheel3D3" type="VehicleWheel3D" parent="." unique_id=936429455]
@@ -2283,6 +2286,7 @@ suspension_stiffness = 50.0
 
 [node name="Cylinder_014" type="MeshInstance3D" parent="VehicleWheel3D3" unique_id=1328498853]
 transform = Transform3D(4.808253e-09, -0.07, -1.6609539e-08, -0.11, -3.059797e-09, 5.802776e-18, -7.3182874e-16, 1.0569706e-08, -0.11, 0.0018712878, 0.00070005655, -0.0022030473)
+visible = false
 mesh = SubResource("ArrayMesh_k7nco")
 
 [node name="VehicleWheel3D4" type="VehicleWheel3D" parent="." unique_id=2035518752]
@@ -2295,6 +2299,7 @@ suspension_stiffness = 50.0
 
 [node name="Cylinder_016" type="MeshInstance3D" parent="VehicleWheel3D4" unique_id=431107798]
 transform = Transform3D(4.808253e-09, -0.07, -1.6609539e-08, -0.11, -3.059797e-09, 5.802776e-18, -7.3182874e-16, 1.0569706e-08, -0.11, 0.010395765, 0.00070005655, -0.0003071297)
+visible = false
 mesh = SubResource("ArrayMesh_b5sui")
 
 [node name="VehicleWheel3D5" type="VehicleWheel3D" parent="." unique_id=1384940827]
@@ -2307,6 +2312,7 @@ suspension_stiffness = 50.0
 
 [node name="Cylinder_018" type="MeshInstance3D" parent="VehicleWheel3D5" unique_id=1612249954]
 transform = Transform3D(4.808253e-09, -0.07, -1.6609539e-08, -0.11, -3.059797e-09, 5.802776e-18, -7.3182874e-16, 1.0569706e-08, -0.11, 0.012249649, 0.00070005655, 0.006470442)
+visible = false
 mesh = SubResource("ArrayMesh_nwusl")
 
 [node name="VehicleWheel3D6" type="VehicleWheel3D" parent="." unique_id=637217173]
@@ -2319,6 +2325,7 @@ suspension_stiffness = 50.0
 
 [node name="Cylinder_017" type="MeshInstance3D" parent="VehicleWheel3D6" unique_id=1348578977]
 transform = Transform3D(4.808253e-09, -0.07, -1.6609539e-08, -0.11, -3.059797e-09, 5.802776e-18, -7.3182874e-16, 1.0569706e-08, -0.11, 0.0015730262, 0.00070005655, 0.00213933)
+visible = false
 mesh = SubResource("ArrayMesh_u86nv")
 
 [node name="VehicleWheel3D7" type="VehicleWheel3D" parent="." unique_id=1146960459]
@@ -2331,6 +2338,7 @@ suspension_stiffness = 50.0
 
 [node name="Cylinder_005" type="MeshInstance3D" parent="VehicleWheel3D7" unique_id=968328408]
 transform = Transform3D(4.808253e-09, -0.07, -1.6609539e-08, -0.11, -3.059797e-09, 5.802776e-18, -7.3182874e-16, 1.0569706e-08, -0.11, -0.0681327, 0.00070005655, 0.00088226795)
+visible = false
 mesh = SubResource("ArrayMesh_xnc0v")
 
 [node name="VehicleWheel3D8" type="VehicleWheel3D" parent="." unique_id=220531291]
@@ -2343,6 +2351,7 @@ suspension_stiffness = 50.0
 
 [node name="Cylinder_004" type="MeshInstance3D" parent="VehicleWheel3D8" unique_id=1774101078]
 transform = Transform3D(4.808253e-09, -0.07, -1.6609539e-08, -0.11, -3.059797e-09, 5.802776e-18, -7.3182874e-16, 1.0569706e-08, -0.11, -0.080213994, 0.00070005655, -0.000749588)
+visible = false
 mesh = SubResource("ArrayMesh_3p7pw")
 
 [node name="VehicleWheel3D9" type="VehicleWheel3D" parent="." unique_id=2104498372]
@@ -2355,6 +2364,7 @@ suspension_stiffness = 50.0
 
 [node name="Cylinder_007" type="MeshInstance3D" parent="VehicleWheel3D9" unique_id=2054968496]
 transform = Transform3D(4.808253e-09, -0.07, -1.6609539e-08, -0.11, -3.059797e-09, 5.802776e-18, -7.3182874e-16, 1.0569706e-08, -0.11, -0.08718249, 0.00070005655, -0.00055511296)
+visible = false
 mesh = SubResource("ArrayMesh_i5nc7")
 
 [node name="VehicleWheel3D10" type="VehicleWheel3D" parent="." unique_id=510473648]
@@ -2367,6 +2377,7 @@ suspension_stiffness = 50.0
 
 [node name="Cylinder_009" type="MeshInstance3D" parent="VehicleWheel3D10" unique_id=1986682346]
 transform = Transform3D(4.808253e-09, -0.07, -1.6609539e-08, -0.11, -3.059797e-09, 5.802776e-18, -7.3182874e-16, 1.0569706e-08, -0.11, -0.07932222, 0.00070005655, -0.0015020967)
+visible = false
 mesh = SubResource("ArrayMesh_1ygll")
 
 [node name="VehicleWheel3D11" type="VehicleWheel3D" parent="." unique_id=1009202834]
@@ -2379,6 +2390,7 @@ suspension_stiffness = 50.0
 
 [node name="Cylinder_008" type="MeshInstance3D" parent="VehicleWheel3D11" unique_id=870170007]
 transform = Transform3D(4.808253e-09, -0.07, -1.6609539e-08, -0.11, -3.059797e-09, 5.802776e-18, -7.3182874e-16, 1.0569706e-08, -0.11, -0.07429406, 0.00070005655, 0.0111147165)
+visible = false
 mesh = SubResource("ArrayMesh_7bufs")
 
 [node name="VehicleWheel3D12" type="VehicleWheel3D" parent="." unique_id=1389077662]
@@ -2391,6 +2403,7 @@ suspension_stiffness = 50.0
 
 [node name="Cylinder_010" type="MeshInstance3D" parent="VehicleWheel3D12" unique_id=1522287844]
 transform = Transform3D(4.808253e-09, -0.07, -1.6609539e-08, -0.11, -3.059797e-09, 5.802776e-18, -7.3182874e-16, 1.0569706e-08, -0.11, -0.074730396, 0.00070005655, 0.005018115)
+visible = false
 mesh = SubResource("ArrayMesh_omyp4")
 
 [node name="VehicleWheel3D14" type="VehicleWheel3D" parent="." unique_id=1295852988]
@@ -2403,192 +2416,193 @@ suspension_stiffness = 50.0
 
 [node name="Cylinder_010" type="MeshInstance3D" parent="VehicleWheel3D14" unique_id=1660318945]
 transform = Transform3D(4.808253e-09, -0.07, -1.6609539e-08, -0.11, -3.059797e-09, 5.802776e-18, -7.3182874e-16, 1.0569706e-08, -0.11, -0.074730396, 0.00070005655, 0.005018115)
+visible = false
 mesh = SubResource("ArrayMesh_omyp4")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=266459372]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00011497736, -0.291981, 0.5355639)
 shape = SubResource("BoxShape3D_onrkg")
 
-[node name="Body2" type="MeshInstance3D" parent="." unique_id=1079066789]
+[node name="Body" type="MeshInstance3D" parent="." unique_id=1079066789]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
 
-[node name="Turret" type="MeshInstance3D" parent="Body2" unique_id=815623846]
+[node name="Turret" type="MeshInstance3D" parent="Body" unique_id=815623846]
 transform = Transform3D(0.54, 0, 0, 0, 0.22, 0, 0, 0, 0.59000003, 0, 0.19822858, 0.26995605)
 mesh = SubResource("ArrayMesh_3l6ak")
 
-[node name="Cube_010" type="MeshInstance3D" parent="Body2/Turret" unique_id=645027115]
+[node name="Cube_010" type="MeshInstance3D" parent="Body/Turret" unique_id=645027115]
 transform = Transform3D(0.09500564, 0.06960685, 0, -0.6406995, 0.062185496, 0, 0, -4.440892e-16, 0.16949159, 1.1544441, 0.37789857, -0.61384857)
 mesh = SubResource("ArrayMesh_3pewr")
 
-[node name="Cube_011" type="MeshInstance3D" parent="Body2/Turret" unique_id=1888513359]
+[node name="Cube_011" type="MeshInstance3D" parent="Body/Turret" unique_id=1888513359]
 transform = Transform3D(0.09500564, 0.06960685, 0, -0.6406995, 0.062185496, 0, 0, -4.440892e-16, 0.16949159, 1.154444, 0.37789857, 0.21822011)
 mesh = SubResource("ArrayMesh_o0agw")
 
-[node name="Cube_012" type="MeshInstance3D" parent="Body2/Turret" unique_id=1175296134]
+[node name="Cube_012" type="MeshInstance3D" parent="Body/Turret" unique_id=1175296134]
 transform = Transform3D(0.09500564, 0.06960685, 0, -0.6406995, 0.062185496, 0, 0, -4.440892e-16, 0.16949159, 1.154444, 0.37789857, 0.6341297)
 mesh = SubResource("ArrayMesh_mfhpm")
 
-[node name="Cube_013" type="MeshInstance3D" parent="Body2/Turret" unique_id=2052361854]
+[node name="Cube_013" type="MeshInstance3D" parent="Body/Turret" unique_id=2052361854]
 transform = Transform3D(-0.09500564, -0.06960685, 0, -0.6406995, 0.062185496, 0, 0, 4.440892e-16, 0.16949159, -1.1541237, 0.37789857, 0.6341297)
 mesh = SubResource("ArrayMesh_wx232")
 
-[node name="Cube_014" type="MeshInstance3D" parent="Body2/Turret" unique_id=587807730]
+[node name="Cube_014" type="MeshInstance3D" parent="Body/Turret" unique_id=587807730]
 transform = Transform3D(-0.09500564, -0.06960685, 0, -0.6406995, 0.062185496, 0, 0, 4.440892e-16, 0.16949159, -1.1541237, 0.37789857, 0.21822006)
 mesh = SubResource("ArrayMesh_0uxtw")
 
-[node name="Cube_015" type="MeshInstance3D" parent="Body2/Turret" unique_id=1310414089]
+[node name="Cube_015" type="MeshInstance3D" parent="Body/Turret" unique_id=1310414089]
 transform = Transform3D(-0.09500564, -0.06960685, 0, -0.6406995, 0.062185496, 0, 0, 4.440892e-16, 0.16949159, -1.1541237, 0.37789857, -0.61384857)
 mesh = SubResource("ArrayMesh_x3n8t")
 
-[node name="Cylinder_005" type="MeshInstance3D" parent="Body2/Turret" unique_id=1607224938]
+[node name="Cylinder_005" type="MeshInstance3D" parent="Body/Turret" unique_id=1607224938]
 transform = Transform3D(0.37037036, 0, 3.5527137e-15, 0, 0.090909086, 0, -1.7763568e-15, 0, 0.33898303, 0.59259254, 1.0770768, 0.016477823)
 mesh = SubResource("ArrayMesh_k4u2t")
 
-[node name="Cylinder_006" type="MeshInstance3D" parent="Body2/Turret" unique_id=1597334128]
+[node name="Cylinder_006" type="MeshInstance3D" parent="Body/Turret" unique_id=1597334128]
 transform = Transform3D(0.37037036, 0, 3.5527137e-15, 0, 0.090909086, 0, -1.7763568e-15, 0, 0.33898303, -0.5925926, 1.0770768, 0.016477793)
 mesh = SubResource("ArrayMesh_b7t7b")
 
-[node name="Cube_016" type="MeshInstance3D" parent="Body2/Turret" unique_id=876169237]
+[node name="Cube_016" type="MeshInstance3D" parent="Body/Turret" unique_id=876169237]
 transform = Transform3D(0.25925925, 0, 0, 0, 0.45454547, 0, 0, 0, 0.23728813, 0.44186336, 0.48384595, 1.2263129)
 mesh = SubResource("ArrayMesh_lr84s")
 
-[node name="Cube_017" type="MeshInstance3D" parent="Body2/Turret" unique_id=1439222088]
+[node name="Cube_017" type="MeshInstance3D" parent="Body/Turret" unique_id=1439222088]
 transform = Transform3D(0.4259259, 0, 1.7763568e-15, 0, 0.6363636, 0, -3.5527137e-15, 0, 0.16949151, -0.3820205, 0.21979725, 1.1424012)
 mesh = SubResource("ArrayMesh_v7uwo")
 
-[node name="ElevationPivot" type="Node3D" parent="Body2/Turret" unique_id=1463784088]
+[node name="ElevationPivot" type="Node3D" parent="Body/Turret" unique_id=1463784088]
 
-[node name="Gun" type="MeshInstance3D" parent="Body2/Turret/ElevationPivot" unique_id=419263967]
+[node name="Gun" type="MeshInstance3D" parent="Body/Turret/ElevationPivot" unique_id=419263967]
 transform = Transform3D(1.8518518, 0, 0, 0, 4.5454545, 0, -1.4210855e-14, 0, 1.6949152, 0, -0.901039, -0.4575526)
 
-[node name="Cube_002" type="MeshInstance3D" parent="Body2/Turret/ElevationPivot/Gun" unique_id=355071185]
+[node name="Cube_002" type="MeshInstance3D" parent="Body/Turret/ElevationPivot/Gun" unique_id=355071185]
 transform = Transform3D(0.10000001, 0, 0, 0, 0.13, 0, 0, 0, 0.21000001, 0, 0.178369, -0.65087026)
 mesh = SubResource("ArrayMesh_trptt")
 
-[node name="Cylinder" type="MeshInstance3D" parent="Body2/Turret/ElevationPivot/Gun" unique_id=1776624499]
+[node name="Cylinder" type="MeshInstance3D" parent="Body/Turret/ElevationPivot/Gun" unique_id=1776624499]
 transform = Transform3D(0.05, 0, 0, 0, 0, -0.05, 0, 1.11, 0, 0, 0.178369, -1.95537)
 mesh = SubResource("ArrayMesh_oi5or")
 
-[node name="Cylinder_001" type="MeshInstance3D" parent="Body2/Turret/ElevationPivot/Gun" unique_id=1369007715]
+[node name="Cylinder_001" type="MeshInstance3D" parent="Body/Turret/ElevationPivot/Gun" unique_id=1369007715]
 transform = Transform3D(0.08, 0, 0, 0, 0, -0.08, 0, 0.05, 0, 0, 0.178369, -0.997663)
 mesh = SubResource("ArrayMesh_6onrh")
 
-[node name="Cylinder_002" type="MeshInstance3D" parent="Body2/Turret/ElevationPivot/Gun" unique_id=1910395967]
+[node name="Cylinder_002" type="MeshInstance3D" parent="Body/Turret/ElevationPivot/Gun" unique_id=1910395967]
 transform = Transform3D(0.07, 0, 0, 0, 0, -0.07, 0, 0.2, 0, 0, 0.178369, -1.8625602)
 mesh = SubResource("ArrayMesh_r52rv")
 
-[node name="Cylinder_003" type="MeshInstance3D" parent="Body2/Turret/ElevationPivot/Gun" unique_id=28990350]
+[node name="Cylinder_003" type="MeshInstance3D" parent="Body/Turret/ElevationPivot/Gun" unique_id=28990350]
 transform = Transform3D(0.085, 0, 0, 0, 0, -0.085, 0, 0.03, 0, 0, 0.178369, -1.0000873)
 mesh = SubResource("ArrayMesh_mphex")
 
-[node name="Cylinder_004" type="MeshInstance3D" parent="Body2/Turret/ElevationPivot/Gun" unique_id=783233419]
+[node name="Cylinder_004" type="MeshInstance3D" parent="Body/Turret/ElevationPivot/Gun" unique_id=783233419]
 transform = Transform3D(0.055, 0, 0, 0, 0, -0.055, 0, 0.05, 0, 0, 0.178369, -3.10892)
 mesh = SubResource("ArrayMesh_a8044")
 
-[node name="GunMuzzle" type="MeshInstance3D" parent="Body2/Turret/ElevationPivot/Gun" unique_id=762645334]
+[node name="GunMuzzle" type="MeshInstance3D" parent="Body/Turret/ElevationPivot/Gun" unique_id=762645334]
 transform = Transform3D(0.1, 0, 0, 0, 0.09, 0, 0, 0, 0.01, 0, 0.178369, -3.3813834)
 mesh = SubResource("ArrayMesh_lclfe")
 
-[node name="Cube_004" type="MeshInstance3D" parent="Body2/Turret/ElevationPivot/Gun" unique_id=1635111371]
+[node name="Cube_004" type="MeshInstance3D" parent="Body/Turret/ElevationPivot/Gun" unique_id=1635111371]
 transform = Transform3D(0.1, 0, 0, 0, 0.09, 0, 0, 0, 0.01, 0, 0.178369, -3.2667358)
 mesh = SubResource("ArrayMesh_v1qkt")
 
-[node name="Cube_005" type="MeshInstance3D" parent="Body2/Turret/ElevationPivot/Gun" unique_id=515955753]
+[node name="Cube_005" type="MeshInstance3D" parent="Body/Turret/ElevationPivot/Gun" unique_id=515955753]
 transform = Transform3D(0.030000001, 0, 0, 0, 0, -0.01, 0, 0.11, 0, 0, 0.2561461, -3.2680075)
 mesh = SubResource("ArrayMesh_hl08w")
 
-[node name="Cube_006" type="MeshInstance3D" parent="Body2/Turret/ElevationPivot/Gun" unique_id=1293304885]
+[node name="Cube_006" type="MeshInstance3D" parent="Body/Turret/ElevationPivot/Gun" unique_id=1293304885]
 transform = Transform3D(0.08, 0, 0, 0, 0.088, 0, 0, 0, 0.01, 0, 0.178369, -3.154275)
 mesh = SubResource("ArrayMesh_uhxqo")
 
-[node name="Cube_007" type="MeshInstance3D" parent="Body2/Turret/ElevationPivot/Gun" unique_id=1688536022]
+[node name="Cube_007" type="MeshInstance3D" parent="Body/Turret/ElevationPivot/Gun" unique_id=1688536022]
 transform = Transform3D(0.030000001, 0, 0, 0, 0, -0.01, 0, 0.11, 0, 0, 0.1004971, -3.2680075)
 mesh = SubResource("ArrayMesh_pu4sp")
 
-[node name="Cylinder_025" type="MeshInstance3D" parent="Body2/Turret/ElevationPivot/Gun" unique_id=833875793]
+[node name="Cylinder_025" type="MeshInstance3D" parent="Body/Turret/ElevationPivot/Gun" unique_id=833875793]
 transform = Transform3D(0.066, 0, 0, 0, 0, -0.066, 0, 0.2, 0, 0, 0.178369, -1.2393935)
 mesh = SubResource("ArrayMesh_skn3p")
 
-[node name="Cube" type="MeshInstance3D" parent="Body2" unique_id=1700050098]
+[node name="Cube" type="MeshInstance3D" parent="Body" unique_id=1700050098]
 transform = Transform3D(0.69, 0, 0, 0, 0.19000001, 0, 0, 0, 1, 0, -0.115415886, 0)
 mesh = SubResource("ArrayMesh_ueogh")
 
-[node name="Cube_008" type="MeshInstance3D" parent="Body2" unique_id=473769789]
+[node name="Cube_008" type="MeshInstance3D" parent="Body" unique_id=473769789]
 transform = Transform3D(0.1, 0, 0, 0, 0.21000004, 0, 0, 0, 1.43, 0.55965, -0.6048737, -0.47601)
 mesh = SubResource("ArrayMesh_pep0n")
 
-[node name="Cylinder_007" type="MeshInstance3D" parent="Body2" unique_id=301513754]
+[node name="Cylinder_007" type="MeshInstance3D" parent="Body" unique_id=301513754]
 transform = Transform3D(0, 0.08, 0, -0.145, 0, 0, 0, 0, 0.145, 0.55965, -0.6607665, 0.186057)
 mesh = SubResource("ArrayMesh_7wq2n")
 
-[node name="Cylinder_008" type="MeshInstance3D" parent="Body2" unique_id=775671070]
+[node name="Cylinder_008" type="MeshInstance3D" parent="Body" unique_id=775671070]
 transform = Transform3D(0, 0.08, 0, -0.145, 0, 0, 0, 0, 0.145, 0.55965, -0.62156314, 0.5306556)
 mesh = SubResource("ArrayMesh_klmop")
 
-[node name="Cylinder_009" type="MeshInstance3D" parent="Body2" unique_id=1070313434]
+[node name="Cylinder_009" type="MeshInstance3D" parent="Body" unique_id=1070313434]
 transform = Transform3D(0, 0.08, 0, -0.145, 0, 0, 0, 0, 0.145, 0.55965, -0.6607665, -0.13411835)
 mesh = SubResource("ArrayMesh_wbqnk")
 
-[node name="Cylinder_010" type="MeshInstance3D" parent="Body2" unique_id=2026458746]
+[node name="Cylinder_010" type="MeshInstance3D" parent="Body" unique_id=2026458746]
 transform = Transform3D(0, 0.08, 0, -0.145, 0, 0, 0, 0, 0.145, 0.55965, -0.6607665, -1.1001476)
 mesh = SubResource("ArrayMesh_tjef7")
 
-[node name="Cylinder_011" type="MeshInstance3D" parent="Body2" unique_id=1561108130]
+[node name="Cylinder_011" type="MeshInstance3D" parent="Body" unique_id=1561108130]
 transform = Transform3D(0, 0.08, 0, -0.145, 0, 0, 0, 0, 0.145, 0.55965, -0.660766, -0.46178848)
 mesh = SubResource("ArrayMesh_8lsx1")
 
-[node name="Cylinder_012" type="MeshInstance3D" parent="Body2" unique_id=43975201]
+[node name="Cylinder_012" type="MeshInstance3D" parent="Body" unique_id=43975201]
 transform = Transform3D(0, 0.08, 0, -0.145, 0, 0, 0, 0, 0.145, 0.55965, -0.660766, -0.7799722)
 mesh = SubResource("ArrayMesh_j671w")
 
-[node name="Cylinder_013" type="MeshInstance3D" parent="Body2" unique_id=1351482306]
+[node name="Cylinder_013" type="MeshInstance3D" parent="Body" unique_id=1351482306]
 transform = Transform3D(0, 0.08, 0, -0.145, 0, 0, 0, 0, 0.145, 0.55965, -0.63057804, -1.441654)
 mesh = SubResource("ArrayMesh_melxr")
 
-[node name="Cylinder_014" type="MeshInstance3D" parent="Body2" unique_id=781964714]
+[node name="Cylinder_014" type="MeshInstance3D" parent="Body" unique_id=781964714]
 transform = Transform3D(0, 0.08, 0, -0.1, 0, 0, 0, 0, 0.1, 0.55965, -0.45384973, 0.77594537)
 mesh = SubResource("ArrayMesh_ph6fu")
 
-[node name="Cylinder_015" type="MeshInstance3D" parent="Body2" unique_id=1825136581]
+[node name="Cylinder_015" type="MeshInstance3D" parent="Body" unique_id=1825136581]
 transform = Transform3D(0, 0.08, 0, -0.1, 0, 0, 0, 0, 0.1, 0.55965, -0.5143821, -1.7036021)
 mesh = SubResource("ArrayMesh_xhryg")
 
-[node name="Cylinder_016" type="MeshInstance3D" parent="Body2" unique_id=1928236757]
+[node name="Cylinder_016" type="MeshInstance3D" parent="Body" unique_id=1928236757]
 transform = Transform3D(0, -0.08, 0, -0.1, 0, 0, 0, 0, -0.1, -0.5596564, -0.5143821, 0.78267497)
 mesh = SubResource("ArrayMesh_11a30")
 
-[node name="Cylinder_017" type="MeshInstance3D" parent="Body2" unique_id=943460290]
+[node name="Cylinder_017" type="MeshInstance3D" parent="Body" unique_id=943460290]
 transform = Transform3D(0, -0.08, 0, -0.1, 0, 0, 0, 0, -0.1, -0.5596564, -0.45384973, -1.6968722)
 mesh = SubResource("ArrayMesh_o214t")
 
-[node name="Cylinder_018" type="MeshInstance3D" parent="Body2" unique_id=474715308]
+[node name="Cylinder_018" type="MeshInstance3D" parent="Body" unique_id=474715308]
 transform = Transform3D(0, -0.08, 0, -0.145, 0, 0, 0, 0, -0.145, -0.5596564, -0.63057804, 0.5207269)
 mesh = SubResource("ArrayMesh_kl13b")
 
-[node name="Cylinder_019" type="MeshInstance3D" parent="Body2" unique_id=46499846]
+[node name="Cylinder_019" type="MeshInstance3D" parent="Body" unique_id=46499846]
 transform = Transform3D(0, -0.08, 0, -0.145, 0, 0, 0, 0, -0.145, -0.5596564, -0.660766, -0.14095479)
 mesh = SubResource("ArrayMesh_vy2cx")
 
-[node name="Cylinder_020" type="MeshInstance3D" parent="Body2" unique_id=1087252776]
+[node name="Cylinder_020" type="MeshInstance3D" parent="Body" unique_id=1087252776]
 transform = Transform3D(0, -0.08, 0, -0.145, 0, 0, 0, 0, -0.145, -0.5596564, -0.660766, -0.4591385)
 mesh = SubResource("ArrayMesh_j6vol")
 
-[node name="Cylinder_021" type="MeshInstance3D" parent="Body2" unique_id=1873297252]
+[node name="Cylinder_021" type="MeshInstance3D" parent="Body" unique_id=1873297252]
 transform = Transform3D(0, -0.08, 0, -0.145, 0, 0, 0, 0, -0.145, -0.5596564, -0.6607665, 0.17922056)
 mesh = SubResource("ArrayMesh_k7jew")
 
-[node name="Cylinder_022" type="MeshInstance3D" parent="Body2" unique_id=449259661]
+[node name="Cylinder_022" type="MeshInstance3D" parent="Body" unique_id=449259661]
 transform = Transform3D(0, -0.08, 0, -0.145, 0, 0, 0, 0, -0.145, -0.5596564, -0.6607665, -0.7868086)
 mesh = SubResource("ArrayMesh_fj4p4")
 
-[node name="Cylinder_023" type="MeshInstance3D" parent="Body2" unique_id=1619163152]
+[node name="Cylinder_023" type="MeshInstance3D" parent="Body" unique_id=1619163152]
 transform = Transform3D(0, -0.08, 0, -0.145, 0, 0, 0, 0, -0.145, -0.5596564, -0.62156314, -1.4515827)
 mesh = SubResource("ArrayMesh_h7x8s")
 
-[node name="Cylinder_024" type="MeshInstance3D" parent="Body2" unique_id=320567576]
+[node name="Cylinder_024" type="MeshInstance3D" parent="Body" unique_id=320567576]
 transform = Transform3D(0, -0.08, 0, -0.145, 0, 0, 0, 0, -0.145, -0.5596564, -0.6607665, -1.106984)
 mesh = SubResource("ArrayMesh_lm80f")
 
-[node name="Cube_009" type="MeshInstance3D" parent="Body2" unique_id=1185618347]
+[node name="Cube_009" type="MeshInstance3D" parent="Body" unique_id=1185618347]
 transform = Transform3D(-0.1, 0, 0, 0, 0.21000004, 0, 0, 0, -1.43, -0.55966705, -0.6048737, -0.444917)
 mesh = SubResource("ArrayMesh_0y865")
