@@ -268,7 +268,7 @@ size = Vector3(250, 15, 1)
 size = Vector3(1, 0.325, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_km5ld"]
-size = Vector3(3.4166749, 0.01, 6.575)
+size = Vector3(8.490399, 0.01, 20.804821)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2orkt"]
 albedo_texture = ExtResource("6_km5ld")
@@ -7364,7 +7364,7 @@ material_override = SubResource("StandardMaterial3D_y3bce")
 mesh = SubResource("BoxMesh_0b4ue")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="road11" unique_id=1260209032]
-transform = Transform3D(2.8575704, 4.3150905e-10, -4.4703484e-08, 0, 0.16050562, 2.9802322e-08, -1.4901161e-08, 2.6895617e-07, 4.4049892, 0, 0, 1.0709839)
+transform = Transform3D(1, 6.845221e-08, -1.0803342e-07, 9.313226e-10, 0.99919456, 0.040131792, 2.9802322e-08, -0.040131304, 0.9991994, -0.011108398, 0.34694862, -2.393921)
 shape = SubResource("BoxShape3D_km5ld")
 
 [node name="road3" type="StaticBody3D" parent="." unique_id=876110883]
@@ -7431,6 +7431,24 @@ debug_color = Color(0.7647027, 0.36286712, 0.6860829, 0.41960785)
 
 [node name="Target" parent="." unique_id=1326799935 instance=ExtResource("8_i2t4f")]
 transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -21.849993, 0.19625515, -75.70922)
+
+[node name="Target5" parent="." unique_id=1223407006 instance=ExtResource("8_i2t4f")]
+transform = Transform3D(0.34070766, 0, -0.94016916, 0, 1, 0, 0.94016916, 0, 0.34070766, -82.61164, 0.19625515, -89.04636)
+
+[node name="Target6" parent="." unique_id=1620940268 instance=ExtResource("8_i2t4f")]
+transform = Transform3D(-0.9683613, 0, -0.2495518, 0, 1, 0, 0.2495518, 0, -0.9683613, -94.87145, 0.19625515, -53.06237)
+
+[node name="Target7" parent="." unique_id=1977587281 instance=ExtResource("8_i2t4f")]
+transform = Transform3D(-0.6921178, 0, 0.7217844, 0, 1, 0, -0.7217844, 0, -0.6921178, -80.605095, 0.19625515, -18.765915)
+
+[node name="Target8" parent="." unique_id=1323537532 instance=ExtResource("8_i2t4f")]
+transform = Transform3D(-0.5076287, 0, -0.861576, 0, 1, 0, 0.861576, 0, -0.5076287, -20.567013, 0.19625515, -28.521833)
+
+[node name="Target9" parent="." unique_id=634008723 instance=ExtResource("8_i2t4f")]
+transform = Transform3D(-0.99720997, 0, 0.07464814, 0, 1, 0, -0.07464814, 0, -0.99720997, 54.254383, 0.19625515, 12.350494)
+
+[node name="Target10" parent="." unique_id=1766236905 instance=ExtResource("8_i2t4f")]
+transform = Transform3D(0.057250462, 0, 0.9983598, 0, 1, 0, -0.9983598, 0, 0.057250462, 28.612347, 0.19625515, -54.192593)
 
 [node name="Target2" parent="." unique_id=1347635229 instance=ExtResource("8_i2t4f")]
 transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -23.303944, 0.19625515, -73.171104)
