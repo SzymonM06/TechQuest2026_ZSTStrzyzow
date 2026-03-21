@@ -1,5 +1,6 @@
-[gd_scene format=4 uid="uid://ctm4gp5tcypjt"]
+[gd_scene format=4 uid="uid://calu6a1pu62y8"]
 
+[ext_resource type="Script" uid="uid://bba4vsbm10t3w" path="res://level_2.gd" id="1_qulpo"]
 [ext_resource type="PackedScene" uid="uid://dpy71wg55r0hx" path="res://assets/hanger.glb" id="2_qulpo"]
 [ext_resource type="PackedScene" uid="uid://cyeegooj4dxi0" path="res://assets/fence.glb" id="3_jifot"]
 [ext_resource type="PackedScene" uid="uid://bspvd7nph08lg" path="res://assets/mountain.glb" id="4_3opl0"]
@@ -7,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://yjpo6e6sn403" path="res://assets/water-texture-top-view-background-design-illustration-free-vector.jpg" id="6_s8oj7"]
 [ext_resource type="Texture2D" uid="uid://lgwm1vafqscs" path="res://assets/piasek-tekstura-32658629.webp" id="7_mw4xc"]
 [ext_resource type="PackedScene" uid="uid://b86tkg4dnvd8g" path="res://target.tscn" id="8_r8rrl"]
-[ext_resource type="PackedScene" uid="uid://bxlak8otvr5y6" path="res://playerKrab.tscn" id="8_rmy57"]
+[ext_resource type="PackedScene" path="res://playerKrab.tscn" id="8_rmy57"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_f2txt"]
 size = Vector3(0.24391174, 2.847412, 17.058044)
@@ -318,6 +319,7 @@ size = Vector3(3.345, 5, 25.680603)
 size = Vector3(1, 4.0097656, 11.567627)
 
 [node name="Level2" type="Node3D" unique_id=1823335500]
+script = ExtResource("1_qulpo")
 
 [node name="hangar_collisions" type="StaticBody3D" parent="." unique_id=214248842]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.192188, 0.6140305, -96.49349)
@@ -6654,7 +6656,7 @@ transform = Transform3D(8.342855, 0, 0, 0, 0.10210318, 0, 0, 0, 28.482359, 0.001
 mesh = SubResource("BoxMesh_0b4ue")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="road" unique_id=458302210]
-transform = Transform3D(8.342854, 0, 0, 0, 0.10210318, 0, 0, 0, 9.230834, 0, 0, 18.650627)
+transform = Transform3D(8.342569, 0, 0.076042324, 0, 0.10210318, 0, -0.06872726, 0, 9.23052, 0, 0, 18.650627)
 mesh = SubResource("BoxMesh_0b4ue")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="road" unique_id=878799194]
@@ -7427,16 +7429,37 @@ shape = SubResource("BoxShape3D_2orkt")
 debug_color = Color(0.7647027, 0.36286712, 0.6860829, 0.41960785)
 
 [node name="Target" parent="." unique_id=1326799935 instance=ExtResource("8_r8rrl")]
-transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -21.849993, 0.19625515, -75.70922)
+transform = Transform3D(0.017993385, 0, -0.999838, 0, 1, 0, 0.999838, 0, 0.017993385, -21.849993, 0.19625515, -24.889233)
 
 [node name="Target2" parent="." unique_id=1347635229 instance=ExtResource("8_r8rrl")]
 transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -23.303944, 0.19625515, -73.171104)
 
 [node name="Target3" parent="." unique_id=1801236278 instance=ExtResource("8_r8rrl")]
-transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -25.750732, 0.19625515, -76.26437)
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -78.48129, 0.19625515, -71.830414)
+
+[node name="Target5" parent="." unique_id=845999255 instance=ExtResource("8_r8rrl")]
+transform = Transform3D(-0.7858568, 0, -0.6184083, 0, 1, 0, 0.6184083, 0, -0.7858568, -0.19462204, 0.19625515, -76.26437)
 
 [node name="Target4" parent="." unique_id=1856527467 instance=ExtResource("8_r8rrl")]
 transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -27.27108, 0.19625515, -73.34038)
 
 [node name="PlayerKrab" parent="." unique_id=18152314 instance=ExtResource("8_rmy57")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.481363, 0.76357186, -93.251724)
+
+[node name="Label" type="Label" parent="." unique_id=1623391653]
+offset_left = 18.0
+offset_top = 591.0
+offset_right = 160.0
+offset_bottom = 636.0
+theme_override_font_sizes/font_size = 32
+text = "Cele 0/5"
+
+[node name="Label2" type="Label" parent="." unique_id=696708974]
+offset_left = 4.0
+offset_top = 149.0
+offset_right = 1149.0
+offset_bottom = 196.0
+theme_override_font_sizes/font_size = 34
+text = "Zestrzel 5 celów!"
+horizontal_alignment = 1
+vertical_alignment = 1
