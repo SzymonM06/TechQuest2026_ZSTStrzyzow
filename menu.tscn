@@ -1,8 +1,8 @@
-[gd_scene format=4 uid="uid://dsf4v2pwe14fw"]
+[gd_scene format=4 uid="uid://dcw6vuvgdkppw"]
 
-[ext_resource type="Script" path="res://menu.gd" id="1_jspdm"]
+[ext_resource type="Script" uid="uid://btuuqu5h2jnt" path="res://menu.gd" id="1_jspdm"]
 [ext_resource type="Texture2D" uid="uid://cw8kmjgd4cod4" path="res://assets/hanger_Concrete_Aggregate_Smoke.jpg" id="2_g7jxm"]
-[ext_resource type="Script" uid="uid://cmy5g5ajeav6d" path="res://camera_rotate.gd" id="2_ouk20"]
+[ext_resource type="Script" path="res://camera_rotate.gd" id="2_ouk20"]
 [ext_resource type="Texture2D" uid="uid://nbocarpgmdgc" path="res://assets/hanger_Concrete_Stamped_Ashlar.jpg" id="3_jspdm"]
 [ext_resource type="Texture2D" uid="uid://b4vrvu8imda7d" path="res://ZST-logo-Nadruk-448x212.png" id="3_ytr4m"]
 [ext_resource type="Texture2D" uid="uid://lctxyyk5rewb" path="res://66a88f85aacd7-500x333.png" id="4_l48gv"]
@@ -1868,7 +1868,7 @@ transform = Transform3D(0.9135454, 0.30696803, -0.26684326, 0, 0.656059, 0.75470
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.505554, 6.3499417, -1.7913494)
 
 [node name="_(Loose Entity)" type="MeshInstance3D" parent="hanger" unique_id=667972197]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2239075, -2.3311558, -29.28215)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.264965, -2.4678378, -29.250088)
 mesh = SubResource("ArrayMesh_16eg1")
 
 [node name="C-Toile" type="MeshInstance3D" parent="hanger" unique_id=1241550776]
@@ -3428,39 +3428,6 @@ texture = ExtResource("5_ytr4m")
 [node name="krab" parent="PanelContainer2/HBoxContainer" unique_id=881761936 instance=ExtResource("15_oxnod")]
 transform = Transform3D(-0.7230756, 0, -0.69076884, 0, 1, 0, 0.69076884, 0, -0.7230756, -31.269098, 0.92281425, -16.87423)
 
-[node name="Cube_001" parent="PanelContainer2/HBoxContainer/krab" index="0" unique_id=815623846]
-transform = Transform3D(0.5400001, 0, 0, 0, 0.22, 0, -2.9802322e-08, 0, 0.59000003, 0.0027999878, 0.1982286, 0.2670288)
-
-[node name="Cube_011" parent="PanelContainer2/HBoxContainer/krab" index="2" unique_id=1888513359]
-transform = Transform3D(0.05130305, 0.037587702, 0, -0.1409539, 0.013680809, 0, 0, 1.8626451e-09, 0.100000046, 0.62619877, 0.28136623, 0.39577866)
-
-[node name="Cube_012" parent="PanelContainer2/HBoxContainer/krab" index="3" unique_id=1175296134]
-transform = Transform3D(0.05130305, 0.037587702, 0, -0.1409539, 0.013680809, 0, 0, 1.8626451e-09, 0.100000046, 0.6261978, 0.28136623, 0.6411667)
-
-[node name="Cube_013" parent="PanelContainer2/HBoxContainer/krab" index="4" unique_id=2052361854]
-transform = Transform3D(-0.05130305, -0.037587702, 0, -0.1409539, 0.013680809, 0, 0, -1.8626451e-09, 0.100000046, -0.6204262, 0.28136623, 0.6411667)
-
-[node name="Cube_014" parent="PanelContainer2/HBoxContainer/krab" index="5" unique_id=587807730]
-transform = Transform3D(-0.05130305, -0.037587702, 0, -0.1409539, 0.013680809, 0, 0, -1.8626451e-09, 0.100000046, -0.62042713, 0.28136623, 0.39577866)
-
-[node name="Cube_015" parent="PanelContainer2/HBoxContainer/krab" index="6" unique_id=1310414089]
-transform = Transform3D(-0.05130305, -0.037587702, 0, -0.1409539, 0.013680809, 0, 0, -1.8626451e-09, 0.100000046, -0.6204281, 0.28136623, -0.095142365)
-
-[node name="Cylinder_005" parent="PanelContainer2/HBoxContainer/krab" index="7" unique_id=1607224938]
-transform = Transform3D(0.20000002, 0, 0, 0, 0.02, 0, 0, 0, 0.20000002, 0.32280064, 0.43518555, 0.27674866)
-
-[node name="Cylinder_006" parent="PanelContainer2/HBoxContainer/krab" index="8" unique_id=1597334128]
-transform = Transform3D(0.20000002, 0, 0, 0, 0.02, 0, 0, 0, 0.20000002, -0.3172016, 0.43518555, 0.27675247)
-
-[node name="Cube_016" parent="PanelContainer2/HBoxContainer/krab" index="9" unique_id=876169237]
-transform = Transform3D(0.14000002, 0, -7.450581e-09, 0, 0.1, 0, 7.450581e-09, 0, 0.14000002, 0.24140644, 0.30467474, 0.9905548)
-
-[node name="Cube_017" parent="PanelContainer2/HBoxContainer/krab" index="10" unique_id=1439222088]
-transform = Transform3D(0.22999999, 0, 0, 0, 0.14, 0, 7.450581e-09, 0, 0.10000001, -0.20349216, 0.24658394, 0.94104767)
-
-[node name="Cylinder_016" parent="PanelContainer2/HBoxContainer/krab" index="22" unique_id=1928236757]
-transform = Transform3D(0, -0.08, 0, -0.1, 0, 0, 0, 0, -0.10000001, -0.5568571, -0.5143821, 0.779747)
-
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1218283361]
 transform = Transform3D(8, 0, 0, 0, -3.496911e-07, 8, 0, -8, -3.496911e-07, -28.913132, 0.135, -17.246)
 mesh = SubResource("QuadMesh_g7jxm")
@@ -3575,5 +3542,3 @@ light_energy = 10.0
 spot_range = 7.3551936
 
 [connection signal="pressed" from="PanelContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]
-
-[editable path="PanelContainer2/HBoxContainer/krab"]

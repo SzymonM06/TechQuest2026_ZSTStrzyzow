@@ -12,13 +12,12 @@ func _process(delta: float) -> void:
 		$Label2.text = "Bojowy Wóz Piechoty BORSUK"
 		$Label.text = "Nowy bojowy, pływający wóz piechoty, 
 		kryptonim „Borsuk” jest w stanie pokonywać szerokie 
-		przeszkody wodne, ma dużą zwrotność i może być używany w różnych warunkach terenowych i pogodowych. Pojazd przeznaczony jest do transportu i ochrony załogi i żołnierzy piechoty przed ostrzałem z broni strzeleckiej,granatników przeciwpancernych i IED.
-		Zdalnie Sterowany System Wieżowy przeznaczony jest do zwalczania, niszczenia lub obezwładniania w różnych warunkach klimatycznych, niezależnie od pory doby, celów lekko i silnie opancerzonych oraz innych obiektów przeciwnika, w tym jego infrastruktury oraz do wsparcia ogniowego pododdziałów w czasie prowadzenia działań bojowych."
+		przeszkody wodne, ma dużą zwrotność i może być używany w różnych warunkach terenowych i pogodowych. Pojazd przeznaczony jest do transportu i ochrony załogi i żołnierzy piechoty przed ostrzałem z broni strzeleckiej,granatników przeciwpancernych i IED.."
 		$Borsuk.visible = true
 		$Dsc0611.visible = false
 	elif selection == 2:
-		$Label2.text = "155 mm samobieżna haubica KRAB"
-		$Label.text = "Typowym zadaniem taktycznym dla 155 mm haubicy samobieżnej KRAB jest obezwładnianie i niszczeniecelów znajdujących się daleko na tyłach wroga – konstrukcja KRABa pozwala jednak haubicy na prowadzenie także ognia „na wprost”. Połączenie nowoczesnej i doskonale wyposażonej wieży haubicy ze sprawdzonym w boju podwoziem pozwoliło stworzyć produkt charakteryzujący się zarówno wysoką wydajnością, jak i niezawodnością, przy jednoczesnym zachowaniu najwyższych parametrów ergonomii obsługi i standardów bezpieczeństwa. Krab jest autonomiczną haubicą – wyposażoną w system łączności, dowodzenia i kierowania ogniem C4i TOPAZ. Ma także charakter modułowy: wieżę można zastosować na dowolnym innym podwoziu gąsienicowym o odpowiednich parametrach."
+		$Label2.text = "Samobieżna haubica KRAB"
+		$Label.text = "Typowym zadaniem taktycznym dla 155 mm haubicy samobieżnej KRAB jest obezwładnianie i niszczeniecelów znajdujących się daleko na tyłach wroga – konstrukcja KRABa pozwala jednak haubicy na prowadzenie także ognia „na wprost”. "
 		$Borsuk.visible = false
 		$Dsc0611.visible = true
 	else:
