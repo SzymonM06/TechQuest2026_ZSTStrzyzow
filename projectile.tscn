@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://da2a7e1lcm0js"]
+
+[ext_resource type="Script" uid="uid://bps61xmkagnqp" path="res://projectile.gd" id="1_a85iw"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_a85iw"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a85iw"]
+
+[node name="Projectile" type="CharacterBody3D" unique_id=226456541]
+script = ExtResource("1_a85iw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=120322926]
+mesh = SubResource("CapsuleMesh_a85iw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1893681518]
+shape = SubResource("CapsuleShape3D_a85iw")

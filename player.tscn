@@ -1204,7 +1204,7 @@ transform = Transform3D(-0.02, -2.5352605e-08, 7.642742e-17, 0, -1.2676303e-08, 
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_hqdf1")
 
-[node name="GunPart3" type="MeshInstance3D" parent="Body/Turret/ElevationPivot/Gun" unique_id=1284152517]
+[node name="GunMuzzle" type="MeshInstance3D" parent="Body/Turret/ElevationPivot/Gun" unique_id=1284152517]
 transform = Transform3D(0.027999999, -2.1855693e-09, -1.0699838e-16, 0, 1.0927846e-09, -0.027999999, -2.4478377e-09, -0.024999999, -1.2239189e-09, 0.01373102, 0.29746985, 1.0802708)
 cast_shadow = 0
 mesh = SubResource("ArrayMesh_h36w2")
