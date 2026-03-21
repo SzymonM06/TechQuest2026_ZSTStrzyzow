@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cyeegooj4dxi0" path="res://assets/fence.glb" id="3_n6hdu"]
 [ext_resource type="Texture2D" uid="uid://yjpo6e6sn403" path="res://assets/water-texture-top-view-background-design-illustration-free-vector.jpg" id="6_km5ld"]
 [ext_resource type="Texture2D" uid="uid://lgwm1vafqscs" path="res://assets/piasek-tekstura-32658629.webp" id="7_i2t4f"]
+[ext_resource type="PackedScene" uid="uid://b86tkg4dnvd8g" path="res://target.tscn" id="8_i2t4f"]
 [ext_resource type="PackedScene" uid="uid://bspvd7nph08lg" path="res://assets/mountain.glb" id="8_km5ld"]
 [ext_resource type="PackedScene" uid="uid://bgdykm4mhdx8g" path="res://assets/small_grass.glb" id="9_i2t4f"]
 
@@ -7427,3 +7428,15 @@ debug_color = Color(0.7647027, 0.36286712, 0.6860829, 0.41960785)
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.3713837, 1.5048828, 0.9668884)
 shape = SubResource("BoxShape3D_2orkt")
 debug_color = Color(0.7647027, 0.36286712, 0.6860829, 0.41960785)
+
+[node name="Target" parent="." unique_id=1326799935 instance=ExtResource("8_i2t4f")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -21.849993, 0.19625515, -75.70922)
+
+[node name="Target2" parent="." unique_id=1347635229 instance=ExtResource("8_i2t4f")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -23.303944, 0.19625515, -73.171104)
+
+[node name="Target3" parent="." unique_id=1801236278 instance=ExtResource("8_i2t4f")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -25.750732, 0.19625515, -76.26437)
+
+[node name="Target4" parent="." unique_id=1856527467 instance=ExtResource("8_i2t4f")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -27.27108, 0.19625515, -73.34038)
