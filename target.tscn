@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://1aqaxg6wa3cr" path="res://assets/target.glb" id="1_t2jmu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_t2jmu"]
-size = Vector3(0.06, 0.4, 0.3)
+size = Vector3(0.12423828, 0.4, 0.3)
 
 [sub_resource type="Animation" id="Animation_t2jmu"]
 length = 0.001
@@ -106,7 +106,7 @@ transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.56, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="target/Area3D" unique_id=476952313]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0012121573, 0.014283478, -0.0008544922)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0020222813, 0.016693413, 0.0026613474)
 shape = SubResource("BoxShape3D_t2jmu")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1487413357]
