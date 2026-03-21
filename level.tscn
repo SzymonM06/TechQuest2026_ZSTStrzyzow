@@ -267,6 +267,7 @@ size = Vector3(250, 15, 1)
 size = Vector3(1, 0.325, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_km5ld"]
+size = Vector3(8.064146, 0.63916016, 26.50122)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2orkt"]
 albedo_texture = ExtResource("6_km5ld")
@@ -2445,7 +2446,7 @@ debug_color = Color(0.9124945, 9.8186734e-05, 0.72477496, 0.41960785)
 transform = Transform3D(1, 0, 0, 0, 0.4965941, 0, 0, 0, 1, -24.27782, -0.11477947, -92.55952)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="road" unique_id=1932647471]
-transform = Transform3D(8.342857, 0, 0, 0, 0.10210318, 0, 0, 0, 28.482363, 0, 0, 0)
+transform = Transform3D(8.342856, 0, 0, 0, 0.10210318, 0, 0, 0, 28.48236, 0, 0, 0)
 mesh = SubResource("BoxMesh_0b4ue")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="road" unique_id=458302210]
@@ -2719,7 +2720,7 @@ material_override = SubResource("StandardMaterial3D_ilwjd")
 mesh = SubResource("BoxMesh_0b4ue")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="road6" unique_id=2132076396]
-transform = Transform3D(8.378624, 0, 0, 0, 0.23959225, 0, 0, 0, 32.208485, 0, 0, 1.0708923)
+transform = Transform3D(0.9999999, 9.14657e-07, 2.4214387e-07, 5.057473e-10, 1, 2.7716321e-06, -3.874302e-07, -3.0315261e-06, 1.0000004, -0.09501648, 0.3465824, 1.4361267)
 shape = SubResource("BoxShape3D_km5ld")
 
 [node name="road11" type="StaticBody3D" parent="." unique_id=2115128237]
